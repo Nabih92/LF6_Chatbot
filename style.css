@@ -137,11 +137,3 @@ h1{
       flex-direction: column;
    }
 }
-
-.my-container {
-   padding-top: 150px;
-}
-
- #name_firma{
-     color: var(--light);
- }
