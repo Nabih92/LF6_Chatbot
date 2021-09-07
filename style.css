@@ -121,7 +121,7 @@
       margin: 0 -16px;
       display: inherit;
    }
-   .container{
+   .container-fluid{
       flex-direction: inherit;
    }
 }
@@ -134,7 +134,7 @@
    .menu.is-active{
       display: grid;
    }
-   .container{
+   .container-fluid{
       flex-direction: column;
    }
 }
