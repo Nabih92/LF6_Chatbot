@@ -1,115 +1,114 @@
 :root {
-    --primary: #FFC100;
-    --light: #EEEEEE;
-    --dark: #000;
- }
-  
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira sans', sans-serif;
- }
-  
- .container{
-    max-width: 1280px;
-    margin: 0 auto;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
-  
- nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: var(--dark);
-    padding: 16px 32px;
-    border-bottom: 3px solid var(--primary);
- }
- 
- h1{
-    color: #FFF; 
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
+   --primary: #FFC100;
+   --light: #EEEEEE;
+   --dark: #000;
+}
 
- }
-  
- .b1{
-    display: block;
-    position: relative;
-    z-index: 1;
-  
-    user-select: none;
-  
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
- }
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Fira sans', sans-serif;
+}
 
- .b1 span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
+.container{
+   max-width: 1280px;
+   margin: 0 auto;
 
-    background-color: var(--light);
-    border-radius: 6px;
-    z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
-    transform-origin: 0 0;
-    transition: 0.4s;
- } 
+nav{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 99;
+   background-color: var(--dark);
+   padding: 16px 32px;
+   border-bottom: 3px solid var(--primary);
+}
 
- .b1:hover span:nth-child(2){
-    transform: translateX(10px);
-    background-color: var(--primary);
- }
+h1{
+   color: #FFF; 
+   font-size: 28px;
+   font-weight: 700;
+   letter-spacing: 2px;
 
- .b1.is-active span:nth-child(1) {
-    transform: translate(0px, -2px) rotate(45deg);
- }
+}
 
- .b1.is-active span:nth-child(2) {
-     opacity: 0;
-    transform: translateX(15px);
- }
+.b1{
+   display: block;
+   position: relative;
+   z-index: 1;
 
- .b1.is-active span:nth-child(3) {
-    transform: translate(-3px, 3px) rotate(-45deg);
- }
+   user-select: none;
 
- .b1.is-active:hover span{
-    background-color: var(--primary);
- }
+   appearance: none;
+   border: none;
+   outline: none;
+   background: none;
+   cursor: pointer;
+}
 
- .menu{
-    display: none;
-    flex: 1 1 0%;
-    justify-content: flex-end;
-    margin: 0 -16px;
- }
+.b1 span {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
 
- .menu a{
-    color: #FFF;
-    margin: 0 16px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.4;
-    padding: 8px 16px;
-    border-radius: 99px;
- }
+   background-color: var(--light);
+   border-radius: 6px;
+   z-index: 1;
 
- .menu a.is-active, .menu a:hover {
-    background-color: var(--primary);
- }
+   transform-origin: 0 0;
+   transition: 0.4s;
+} 
+
+.b1:hover span:nth-child(2){
+   transform: translateX(10px);
+   background-color: var(--primary);
+}
+
+.b1.is-active span:nth-child(1) {
+   transform: translate(0px, -2px) rotate(45deg);
+}
+
+.b1.is-active span:nth-child(2) {
+   opacity: 0;
+   transform: translateX(15px);
+}
+
+.b1.is-active span:nth-child(3) {
+   transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.b1.is-active:hover span{
+   background-color: var(--primary);
+}
+
+.menu{
+   display: none;
+   flex: 1 1 0%;
+   justify-content: flex-end;
+   margin: 0 -16px;
+}
+
+.menu a {
+   color: #FFF;
+   margin: 0 16px;
+   text-decoration: none;
+   transition: 0.4s;
+   padding: 8px 16px;
+   border-radius: 99px;
+}
+
+.menu a.is-active, .menu a:hover {
+   background-color: var(--primary);
+}
 
 @media only screen and (min-width: 768px) {
    .b1{
@@ -121,7 +120,7 @@
       margin: 0 -16px;
       display: inherit;
    }
-   .container{
+   .container-fluid{
       flex-direction: inherit;
    }
 }
@@ -134,7 +133,7 @@
    .menu.is-active{
       display: grid;
    }
-   .container{
+   .container-fluid{
       flex-direction: column;
    }
 }
