@@ -111,13 +111,32 @@
     background-color: var(--primary);
  }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
    .b1{
       display: none;
-   } 
-  .menu{
-     display: flex;
-  }
+   }
+   .menu{
+      flex: 1 1 0%;
+      justify-content: flex-end;
+      margin: 0 -16px;
+      display: inherit;
+   }
+   .container{
+      flex-direction: inherit;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+   .b1{
+      margin-top: 10px;
+      display: flexbox;
+   }
+   .menu.is-active{
+      display: grid;
+   }
+   .container{
+      flex-direction: column;
+   }
 }
 
 .my-container {
