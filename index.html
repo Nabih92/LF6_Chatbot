@@ -42,16 +42,16 @@
                         <div id="chatbox">
                             <p id="botStarterMessage" class="botText"><span></span></p>
                             <p id="btns1" style="text-align: initial;">
-                                <button class="Antwort1" id="btn1"><span>Linux OS</span></button>
-                                <button class="Antwort1" id="btn2"><span>Windows OS</span></button>
-                                <button class="Antwort1" id="btn3"><span>Mac OS</span></button>
-                                <button class="Antwort1" id="btn4"><span>Infrastruktur & Netzwerke</span></button>
-                                <button class="Antwort1" id="btn5"><span>Sacharbeit</span></button>
+                                <button onclick = "autoantwort(this.id, this.parentNode.id)" class="Antwort1" id="btn1"><span>Linux OS</span></button>
+                                <button onclick = "autoantwort(this.id, this.parentNode.id)" class="Antwort1" id="btn2"><span>Windows OS</span></button>
+                                <button onclick = "autoantwort(this.id, this.parentNode.id)" class="Antwort1" id="btn3"><span>Mac OS</span></button>
+                                <button onclick = "autoantwort(this.id, this.parentNode.id)" class="Antwort1" id="btn4"><span>Infrastruktur & Netzwerke</span></button>
+                                <button onclick = "autoantwort(this.id, this.parentNode.id)" class="Antwort1" id="btn5"><span>Sacharbeit</span></button>
                             </p>
                         </div>
                         <br>
                         <div class="chat-bar-input-block" id="eingabeBlock">
-                            <div id="userInput">
+                            <div id="userInput"  >
                                 <input disabled id="textInput" class="input-box" type="text" name="msg"
                                     placeholder="Klicken Sie auf 'Enter'...">
                                 <p></p>
