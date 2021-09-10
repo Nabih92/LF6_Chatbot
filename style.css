@@ -269,12 +269,14 @@ h1{
    font-weight: normal;
    text-align: right;
    clear: both;
+   margin-top: 10px;
+   margin-bottom: 0px;
 }
 
 .userText span {
    line-height: 1.5em;
    display: inline-block;
-   background: #00000049;
+   background: var(--primary);
    padding: 10px;
    border-radius: 8px;
    border-bottom-right-radius: 2px;
@@ -350,11 +352,3 @@ h1{
    border: 10px;
    border-style: double;
 }
-
-/* #btn11{
-   animation: test 1s linear;
-}
-
-@keyframes test{
-
-} */
