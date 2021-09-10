@@ -9,6 +9,7 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Fira sans', sans-serif;
+   scroll-behavior: smooth;
 }
 
 .container{
@@ -349,3 +350,11 @@ h1{
    border: 10px;
    border-style: double;
 }
+
+/* #btn11{
+   animation: test 1s linear;
+}
+
+@keyframes test{
+
+} */
