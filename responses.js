@@ -21,7 +21,7 @@ var windowsAntworte = `
 </p>`;
 
 var feedbackOnFAQ = `
-<p class="botText"><span style="margin-top:10px">Did you find an answer?</span></p>
+<p class="botText"><span style="margin-top:10px">Hat es dir geholfen?</span></p>
 <p id="feedbackOnFAQAnswers" style="text-align: center;">
   <button onclick="lastAnswer(this.id, this.parentNode.id)" class="Antwort1" id="yes"><span>Yes</span></button>
   <button onclick="lastAnswer(this.id, this.parentNode.id)" class="Antwort1" id="no"><span>No</span></button>
@@ -29,18 +29,19 @@ var feedbackOnFAQ = `
 
 var finalInput = `
 <p id="feedbackOnFAQAnswers" style="text-align: center;">
-  <p class="botText"><span style="margin-top:10px" id="lastAnswerText"></span><p>
+  <p class="botText"><span style="margin-top:10px" id="lastAnswerText"></span></p>
 </p>`;
 
-var Mitarbeiter_Bereich;
-
+var mitarbeiter_Bereich;
+var einmal;
 function clearCurrentButtons(id, parentId) {
   let bereich = document.getElementById(id).innerHTML;
-  Mitarbeiter_Bereich = parentId;
-
   let disableButtons = document.getElementById(parentId);
   disableButtons.style.display = "none";
-
+  if(einmal === true){
+    einmal = false;
+   mitarbeiter_Bereich = parentId;
+  }
   let botHtml =
     "<br>" +
     '<p style="text-align:right;" class="botText">' +
@@ -51,17 +52,22 @@ function clearCurrentButtons(id, parentId) {
 
   if (parentId == "firstBtns") {
     Message = "ok, um was handelt es sich genau?";
-  } else{
-    Message = "ok, ich habe eine Lösung in FAQ gefunden!";
-  }
-  botHtml = '<p class="botText"><span>' + Message + "</span></p>";
+    botHtml = '<p class="botText"><span>' + Message + "</span></p>";
   $("#chatbox").append(botHtml);
+  } else if (parentId == "linuxAnswers" || parentId == "windowsAnswers"){
+    Message = "ok, ich habe eine Lösung in FAQ gefunden!";
+    
+    botHtml = '<p class="botText"><span>' + Message + "</span></p>";
+  $("#chatbox").append(botHtml);
+  }
+  
+  
   document.getElementById("userInput").scrollIntoView(true);
 }
 
 function showLevel1Answers(id, parentId) {
   clearCurrentButtons(id, parentId);
-
+  einmal = true;
   if (id == "linux") {
     $("#chatbox").append(linuxAntworte);
   }
@@ -95,24 +101,35 @@ var answer;
 
 function lastAnswer(id, parentId){
   clearCurrentButtons(id, parentId);
+  
+  
   var UserInputText = document.getElementById("textInput");
-  var finalInputText = document.getElementById("lastAnswerText");
+  
   if(id == "yes"){
     answer = "Danke für das Feedback"
-
     $("#chatbox").append(finalInput);
-    finalInputText.innerHTML = "Wir bedanken uns bei Ihnen. <br> Wir werden uns auf ein Feedback freuen.";
-    UserInputText.placeholder = "Bitte schreiben Sie hier...";
+    var finalInputText = document.getElementById("lastAnswerText");
+    finalInputText.innerHTML= "Wir bedanken uns bei Ihnen. <br> Wir werden uns auf ein Feedback freuen.";
+    UserInputText.placeholder= "Bitte schreiben Sie hier...";
 
     $('#textInput').prop("disabled", false);
 
   }else if(id == "no"){
 
     $("#chatbox").append(finalInput);
-    if(Mitarbeiter_Bereich == "linuxAnswers"){
-      finalInputText.innerHTML = "Bleiben Sie bitte dran, unser Mitarbeiter Ali wird Sie in kurze kontaktieren.";
-    }
-    UserInputText.placeholder = "Bitte schreiben Sie hier...";
+    var finalInputText = document.getElementById("lastAnswerText");
+    
+     if(mitarbeiter_Bereich == "linuxAnswers"){
+    finalInputText.innerHTML= "Bleiben Sie bitte dran, unser Mitarbeiter Ali wird Sie in kurze kontaktieren.";
+    answer = "bitte warten Sie. Unser Mitarbeiter Ali ist in kurze da.";
+     }
+     else if(mitarbeiter_Bereich == "windowsAnswers"){
+    finalInputText.innerHTML= "Bleiben Sie bitte dran, unser Mitarbeiter Jack wird Sie in kurze kontaktieren.";
+    answer = "bitte warten Sie. Unser Mitarbeiter jack ist in kurze da";
+     }
+     
+     UserInputText.placeholder = "Bitte schreiben Sie hier...";
+     document.getElementById("userInput").scrollIntoView(true);
 
     $('#textInput').prop("disabled", false);
   }
@@ -121,7 +138,14 @@ function lastAnswer(id, parentId){
 }
 
 function getBotResponse(input){
-  if(input !== ""){
+  if(input !== "" && answer == "Danke für das Feedback"){
+    $('#textInput').prop("disabled", true);
+    var UserInputText = document.getElementById("textInput");
+    UserInputText.placeholder = "Auf Wiedersehen!";
+    return answer;
+  }
+  else if (input !== ""){
+    
     return answer;
   }
 }

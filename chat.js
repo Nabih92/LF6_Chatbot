@@ -33,7 +33,7 @@ firstBotMessage();
 
 function getHardResponse(input) {
     let botResponse = getBotResponse(input);
-    botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
+    botHtml = '<p class="botText" style="margin-top:10px"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
 
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
