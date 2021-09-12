@@ -22,14 +22,6 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
-function firstBotMessage() {
-    let firstMessage = `Hallo, ich heiße BumbleBee! wie kann ich dir helfen?`;
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
-
-    document.getElementById("userInput").scrollIntoView(false);
-}
-
-firstBotMessage();
 
 function getHardResponse(input) {
     let botResponse = getBotResponse(input);
