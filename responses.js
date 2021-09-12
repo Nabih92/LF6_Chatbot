@@ -1,6 +1,3 @@
-//Linux OS
-let btn1 = document.getElementById("btn1");
-
 var linuxAntworte = `
 <p id="linuxAnswers" style="text-align: center;">
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux1"><span>Definitionen und Überblick</span></button>
@@ -38,29 +35,26 @@ function clearCurrentButtons(id, parentId) {
   let bereich = document.getElementById(id).innerHTML;
   let disableButtons = document.getElementById(parentId);
   disableButtons.style.display = "none";
+
   if(einmal === true){
     einmal = false;
    mitarbeiter_Bereich = parentId;
   }
-  let botHtml =
-    "<br>" +
-    '<p style="text-align:right;" class="botText">' +
-    bereich +
-    "</p>" +
-    "<br>";
+
+  let botHtml = "<br id='breakStatement'>" + '<p style="text-align:right;" class="botText">' + bereich + "</p>" + "<br id='breakStatement'>";
   $("#chatbox").append(botHtml);
 
   if (parentId == "firstBtns") {
     Message = "ok, um was handelt es sich genau?";
     botHtml = '<p class="botText"><span>' + Message + "</span></p>";
-  $("#chatbox").append(botHtml);
-  } else if (parentId == "linuxAnswers" || parentId == "windowsAnswers"){
+    $("#chatbox").append(botHtml);
+    document.getElementById("userInput").scrollIntoView(true);
+  }else if (parentId == "linuxAnswers" || parentId == "windowsAnswers"){
     Message = "ok, ich habe eine Lösung in FAQ gefunden!";
-    
     botHtml = '<p class="botText"><span>' + Message + "</span></p>";
-  $("#chatbox").append(botHtml);
+    $("#chatbox").append(botHtml);
+    document.getElementById("userInput").scrollIntoView(true);
   }
-  
   
   document.getElementById("userInput").scrollIntoView(true);
 }
@@ -101,8 +95,6 @@ var answer;
 
 function lastAnswer(id, parentId){
   clearCurrentButtons(id, parentId);
-  
-  
   var UserInputText = document.getElementById("textInput");
   
   if(id == "yes"){
@@ -113,25 +105,23 @@ function lastAnswer(id, parentId){
     UserInputText.placeholder= "Bitte schreiben Sie hier...";
 
     $('#textInput').prop("disabled", false);
-
+    document.getElementById("userInput").scrollIntoView(true);
   }else if(id == "no"){
-
     $("#chatbox").append(finalInput);
     var finalInputText = document.getElementById("lastAnswerText");
     
-     if(mitarbeiter_Bereich == "linuxAnswers"){
-    finalInputText.innerHTML= "Bleiben Sie bitte dran, unser Mitarbeiter Ali wird Sie in kurze kontaktieren.";
-    answer = "bitte warten Sie. Unser Mitarbeiter Ali ist in kurze da.";
-     }
-     else if(mitarbeiter_Bereich == "windowsAnswers"){
-    finalInputText.innerHTML= "Bleiben Sie bitte dran, unser Mitarbeiter Jack wird Sie in kurze kontaktieren.";
-    answer = "bitte warten Sie. Unser Mitarbeiter jack ist in kurze da";
-     }
+    if(mitarbeiter_Bereich == "linuxAnswers"){
+        finalInputText.innerHTML= "Bleiben Sie bitte dran, unser Mitarbeiter Ali wird Sie in kurze kontaktieren.";
+        answer = "bitte warten Sie. Unser Mitarbeiter Ali ist in kurze da.";
+    }else if(mitarbeiter_Bereich == "windowsAnswers"){
+        finalInputText.innerHTML= "Bleiben Sie bitte dran, unser Mitarbeiter Jack wird Sie in kurze kontaktieren.";
+        answer = "bitte warten Sie. Unser Mitarbeiter jack ist in kurze da";
+    }
      
-     UserInputText.placeholder = "Bitte schreiben Sie hier...";
-     document.getElementById("userInput").scrollIntoView(true);
+    UserInputText.placeholder = "Bitte schreiben Sie hier...";
 
     $('#textInput').prop("disabled", false);
+    document.getElementById("userInput").scrollIntoView(true);
   }
 
   document.getElementById("userInput").scrollIntoView(true);
@@ -145,7 +135,36 @@ function getBotResponse(input){
     return answer;
   }
   else if (input !== ""){
-    
     return answer;
   }
+}
+
+var coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        $(".botText").remove();
+        $("#linuxAnswers").remove();
+        $("#feedbackOnFAQAnswers").remove();
+        $("#firstBtns").remove();
+        $(".userText").remove();
+        for (let i = 0; i < 100; i++) {
+            let test = document.getElementById("breakStatement");
+            $("#breakStatement").remove();
+        }
+        let MyResetButtons = `
+        <br id="breakStatement">
+        <p id="botStarterMessage" class="botText"><span>Hallo, ich heiße BumbleBee! wie kann ich dir helfen?</span></p>
+        <p id="firstBtns" style="text-align: initial;">
+            <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="linux"><span>Linux OS</span></button>
+            <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="winodws"><span>Windows OS</span></button>
+            <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="mac"><span>Mac OS</span></button>
+            <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="infra"><span>Infrastruktur & Netzwerke</span></button>
+            <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="general"><span>Allgemein</span></button>
+        </p>`;
+        $("#chatbox").append(MyResetButtons);
+        let TextIput = document.getElementById("textInput");
+        TextIput.value = "";
+        $('#textInput').prop("disabled", true);
+    });
 }
