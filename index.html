@@ -1,192 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Help Center</title>
-   <link href="style.css" rel="stylesheet">
-   <link href="faqstyle.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-   <nav>
-        <div class="container">
-          
-            <h1>GeekDude</h1>
-
-            <button class="b1">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        
-            <div class="menu">
-                <a href="#" class="but_inactive">Home</a>
-                <a href="#" class="but_inactive">Pricing</a>
-                <a href="#" class="is-active">FAQ</a>
-                <a href="#" class="but_inactive">Kontakt</a>
-                <a href="#" class="but_inactive">Über uns</a>
-            </div>
-        </div>
-    </nav>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>Geekdude</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(".wrapper").toggleClass("collapse");
+        });
+        $(".sidebar").hover(function () {
+          $(".wrapper").toggleClass("collapse");
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="faqstyle.css">
+    <link rel="stylesheet" href="chatbot.css">
+  </head>
+  <body>
     <div class="chat-bar-collapsible">
-        <button id="chat-button" type="button" class="collapsible">Hier klicken für Hilfe!
-            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
-        </button>
+      <button id="chat-button" type="button" class="collapsible">Hier klicken für Hilfe!
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
 
-        <div class="content">
-            <div class="full-chat-block">
-                <div class="outer-container">
-                    <div class="chat-container">
-                        <div id="chatbox">
-                            <p id="botStarterMessage" class="botText"><span></span></p>
-                            <p id="firstBtns" style="text-align: initial;">
-                                <button onclick = "showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="linux"><span>Linux OS</span></button>
-                                <button onclick = "showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="winodws"><span>Windows OS</span></button>
-                                <button onclick = "showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="mac"><span>Mac OS</span></button>
-                                <button onclick = "showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="infra"><span>Infrastruktur & Netzwerke</span></button>
-                                <button onclick = "showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="general"><span>Allgemein</span></button>
-                            </p>
-                        </div>
-                        <br>
-                        <div class="chat-bar-input-block" id="eingabeBlock">
-                            <div id="userInput">
-                                <input disabled id="textInput" class="input-box" type="text" name="msg"
-                                    placeholder="Bitte nur Buttons wählen...">
-                                <p></p>
-                            </div>
-
-                            <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                    onclick="sendButton()"></i>
-                            </div>
-                        </div>
-
-                        <div id="chat-bar-bottom">
-                            <p></p>
-                        </div>
-
-                    </div>
+      <div class="content">
+        <div class="full-chat-block">
+          <div class="outer-container">
+            <div class="chat-container">
+              <div id="chatbox"></div>
+              <br>
+              <div class="chat-bar-input-block" id="eingabeBlock">
+                <div id="userInput">
+                  <input disabled="disabled" id="textInput" class="input-box" type="text" name="msg" placeholder="Bitte nur Buttons wählen...">
+                  <p></p>
                 </div>
+                <div class="chat-bar-icons">
+                  <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                </div>
+              </div>
 
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="accordion">
-        <h2 style="text-align: center;">Windows OS</h2>
-        <div class="accordion-item">
+    <div class="wrapper collapse">
+      <div class="top_navbar">
+        <div class="hamburger">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <div class="top_menu">
+          <div class="logo"><img src="">Geekdude</div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-bell"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-tag"></i>
+              </span>
+              <span class="title">Pricing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <span class="icon">
+                <i class="fas fa-question-circle"></i>
+              </span>
+              <span class="title">FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span class="title">About us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main_container">
+        <h2 style="text-decoration: underline;">Help Center<a style="margin-left: 10px;font-size: 16px;">FAQs</a></h2>
+
+        <div class="accordion">
+          <h1 style="text-align: center;">Allgemein</h1>
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <h1 style="text-align: center;">Linux OS</h1>
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header" id="FrageZwei">Frage 2</div>
             <div class="accordion-item-body" id="AntwortZwei">
-                <div class="accordion-item-body-content">Antwort 2</div>
+              <div class="accordion-item-body-content">Antwort 2</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
-        </div>
+          </div>
 
-        <div class="accordion-item">
+          <div class="accordion-item">
             <div class="accordion-item-header">Frage 1</div>
             <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
+              <div class="accordion-item-body-content">Antwort 1</div>
             </div>
+          </div>
         </div>
-
-        <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="responses.js"></script>
-    <script src="chat.js"></script>
     <script src="faqscript.js"></script>
-</body>
+    <script src="chat.js"></script>
+    <script src="responses.js"></script>
+  </body>
 </html>
