@@ -1,0 +1,56 @@
+{
+    "Allgemein":[
+        {
+            "Frage": "Frage1",
+            "Antwort": "Antwort1"
+        },
+        {
+            "Frage": "Frage2",
+            "Antwort": "Antwort2"
+        }
+    ],
+    "LinuxOS":[
+        {
+            "Frage": "Frage1",
+            "Antwort": "Antwort1"
+        },
+        {
+            "Frage": "Frage2",
+            "Antwort": "Antwort2"
+        },
+        {
+            "Frage": "hasan",
+            "Antwort": "Antwort3"
+        }
+    ],
+    "WindowsOS":[
+        {
+            "Frage": "Frage1",
+            "Antwort": "Antwort1"
+        },
+        {
+            "Frage": "Frage2",
+            "Antwort": "Antwort2"
+        }
+    ],
+    "MacOS":[
+        {
+            "Frage": "Frage1",
+            "Antwort": "Antwort1"
+        },
+        {
+            "Frage": "Frage2",
+            "Antwort": "Antwort2"
+        }
+    ],
+    "InfrastrukturNetzwerke":[
+        {
+            "Frage": "Frage1",
+            "Antwort": "Antwort1"
+        },
+        {
+            "Frage": "Frage2",
+            "Antwort": "Antwort2"
+        }
+    ]
+}
