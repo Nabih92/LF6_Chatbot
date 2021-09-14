@@ -41,7 +41,7 @@ function clearCurrentButtons(id, parentId) {
    mitarbeiter_Bereich = parentId;
   }
 
-  let botHtml = "<br id='breakStatement'>" + '<p style="text-align:right;" class="botText">' + bereich + "</p>" + "<br id='breakStatement'>";
+  let botHtml = "<br id='breakStatement'>" + '<p style="text-align:right;" class="userText" id="BotTextSpan">' + bereich + "</p>" + "<br id='breakStatement'>";
   $("#chatbox").append(botHtml);
 
   if (parentId == "firstBtns") {
@@ -77,17 +77,17 @@ function showFeedbackOnFAQ(id, parentId) {
   $("#chatbox").append(feedbackOnFAQ);
   
   if(id === "linux1"){
-    let FrageZwei = document.getElementById("FrageZwei");
-    let AntwortZwei = document.getElementById("AntwortZwei");
+    let Frage = document.getElementById("LinuxFrage0");
+    let Antwort = document.getElementById("LinuxAntwort0");
 
-    FrageZwei.classList.toggle("active");
-    if(FrageZwei.classList.contains("active")) {
-      AntwortZwei.style.maxHeight = AntwortZwei.scrollHeight + "px";
-      FrageZwei.classList.toggle("activeBackground");
+    Frage.classList.toggle("active");
+    if(Frage.classList.contains("active")) {
+      Antwort.style.maxHeight = Antwort.scrollHeight + "px";
+      Frage.classList.toggle("activeBackground");
     }else {
-      AntwortZwei.style.maxHeight = 0;
+      Antwort.style.maxHeight = 0;
     }
-    FrageZwei.scrollIntoView(true);
+    // Frage.scrollIntoView(true);
   }
 }
 
