@@ -25,18 +25,23 @@ body{
 .wrapper .top_navbar{
   width: 100%;
   height: 60px;
-  display: flex;
+  display: -webkit-inline-box;
   position: fixed;
   top: 0px;
 }
 
-.wrapper .top_navbar .hamburger{
+.wrapper.collapse .top_navbar .hamburger{
   width: 97px;
+}
+
+.wrapper .top_navbar .hamburger{
+  width: 200px;
   height: 125%;
   background: var(--primary);
-  padding: 23px 27px;
+  padding: 23px 30px;
   border-top-left-radius: 0px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .wrapper .top_navbar .hamburger div{
