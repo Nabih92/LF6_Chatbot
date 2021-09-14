@@ -7,17 +7,19 @@ for (let i = 0; i < coll.length; i++) {
         if(this.classList.value === "collapsible active"){
             this.classList.toggle("collapsible2");
             this.classList.remove("collapsible");
+            let chatboxDisplay = document.getElementById("showChat");
+            chatboxDisplay.style.display = "block";
+            chatboxDisplay.classList.toggle("animate__fadeInUp");
+            chatboxDisplay.classList.remove("animate__fadeOutDown");
         }else{
+            let chatboxDisplay = document.getElementById("showChat");
+            chatboxDisplay.classList.remove("animate__fadeInUp");
+            chatboxDisplay.classList.toggle("animate__fadeOutDown");
             this.classList.toggle("collapsible");
             this.classList.remove("collapsible2");
-        }
-
-        var content = this.nextElementSibling;
-
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+            setTimeout(() => {
+                chatboxDisplay.style.display = "none";
+            }, 400);
         }
     });
 }
