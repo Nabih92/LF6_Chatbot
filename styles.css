@@ -167,7 +167,6 @@ body{
 .wrapper.collapse .sidebar ul li a span.title{
   display: none;
 }
-
 .wrapper.collapse .main_container{
   width: (100% - 70px);
   margin-left: 120px;
