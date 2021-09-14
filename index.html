@@ -21,11 +21,35 @@
     <link rel="stylesheet" href="chatbot.css">
   </head>
   <body>
-    <div class="chat-bar-collapsible">
-      <button id="chat-button" type="button" class="collapsible">Hier klicken für Hilfe!
-          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
-      </button>
+    <div class="container">
+      <div class="chatbox">
+        <div class="chatbox__button">
+          <button id="chat-button" type="button" class="collapsible"><img src="./chatboticon.png" style="width: 45px;height: 40px;"></button>
+        </div>
+      </div>
+    </div>
 
+
+    <style>
+      .chatbox {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+      }
+      .chatbox__button {
+        text-align: right;
+      }
+    </style>
+    <div class="chat-bar-collapsible" id="showChat" style="display: none;">  
+      <div class="chatbox__header">
+        <div class="chatbox__image--header">
+            <img style="width: 30px;" src="./chatboticon.png" alt="image">
+        </div>
+        <div class="chatbox__content--header">
+            <h4 class="chatbox__heading--header">BubbleBot</h4>
+            <p class="chatbox__description--header">Ich bin hier um Sie zu helfen!</p>
+        </div>
+      </div>
       <div class="content">
         <div class="full-chat-block">
           <div class="outer-container">
@@ -128,84 +152,22 @@
       <div class="main_container">
         <h2 style="text-decoration: underline;">Help Center<a style="margin-left: 10px;font-size: 16px;">FAQs</a></h2>
 
-        <div class="accordion">
-          <h1 style="text-align: center;">Allgemein</h1>
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
+        <div id="data-table"></div>
+        <div class="accordion" id="accordionFAQ">
+          <div id="AllgemeinFAQ">
+            <h1 style="text-align: center;">Allgemein</h1>
           </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
+          <div id="LinuxOSFaq">
+            <h1 style="text-align: center;">Linux OS</h1>
           </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
+          <div id="WindowsOSFaq">
+            <h1 style="text-align: center;">Windows OS</h1>
           </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
+          <div id="MacOSFaq">
+            <h1 style="text-align: center;">Mac OS</h1>
           </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-          </div>
-
-          <h1 style="text-align: center;">Linux OS</h1>
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header" id="FrageZwei">Frage 2</div>
-            <div class="accordion-item-body" id="AntwortZwei">
-              <div class="accordion-item-body-content">Antwort 2</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-item-header">Frage 1</div>
-            <div class="accordion-item-body">
-              <div class="accordion-item-body-content">Antwort 1</div>
-            </div>
+          <div id="NetzwerkeFaq">
+            <h1 style="text-align: center;">Infrastruktur & Netzwerke</h1>
           </div>
         </div>
       </div>
