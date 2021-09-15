@@ -24,6 +24,7 @@
     <div class="container">
       <div class="chatbox">
         <div class="chatbox__button">
+          <div class="HelpMessage" id="HelpMessageRemove">kann ich dir helfen?</div>
           <button id="chat-button" type="button" class="collapsible"><img src="./chatboticon.png" style="width: 45px;height: 40px;"></button>
         </div>
       </div>
@@ -43,11 +44,20 @@
     <div class="chat-bar-collapsible" id="showChat" style="display: none;">  
       <div class="chatbox__header">
         <div class="chatbox__image--header">
-            <img style="width: 30px;" src="./chatboticon.png" alt="image">
+            <img style="width: 38px;" src="./chatboticon.png" alt="image">
         </div>
         <div class="chatbox__content--header">
             <h4 class="chatbox__heading--header">BubbleBot</h4>
             <p class="chatbox__description--header">Ich bin hier um Sie zu helfen!</p>
+        </div>
+      </div>
+      <div class="chat-bar-input-block" id="eingabeBlock">
+        <div id="userInput">
+          <input disabled="disabled" id="textInput" class="input-box" type="text" name="msg" placeholder="Bitte nur Buttons wählen...">
+          <p></p>
+        </div>
+        <div class="chat-bar-icons">
+          <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
         </div>
       </div>
       <div class="content">
@@ -56,16 +66,6 @@
             <div class="chat-container">
               <div id="chatbox"></div>
               <br>
-              <div class="chat-bar-input-block" id="eingabeBlock">
-                <div id="userInput">
-                  <input disabled="disabled" id="textInput" class="input-box" type="text" name="msg" placeholder="Bitte nur Buttons wählen...">
-                  <p></p>
-                </div>
-                <div class="chat-bar-icons">
-                  <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
-                </div>
-              </div>
-
               <div id="chat-bar-bottom">
                 <p></p>
               </div>

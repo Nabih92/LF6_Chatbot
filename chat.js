@@ -5,6 +5,8 @@ for (let i = 0; i < coll.length; i++) {
         this.classList.toggle("active");
 
         if(this.classList.value === "collapsible active"){
+            let removeHelpMessage = document.getElementById("HelpMessageRemove");
+            removeHelpMessage.style.display = "none";
             this.classList.toggle("collapsible2");
             this.classList.remove("collapsible");
             let chatboxDisplay = document.getElementById("showChat");
@@ -12,6 +14,10 @@ for (let i = 0; i < coll.length; i++) {
             chatboxDisplay.classList.toggle("animate__fadeInUp");
             chatboxDisplay.classList.remove("animate__fadeOutDown");
         }else{
+            setTimeout(() => {
+                let removeHelpMessage = document.getElementById("HelpMessageRemove");
+                removeHelpMessage.style.display = "block";
+            }, 380);
             let chatboxDisplay = document.getElementById("showChat");
             chatboxDisplay.classList.remove("animate__fadeInUp");
             chatboxDisplay.classList.toggle("animate__fadeOutDown");
