@@ -220,15 +220,24 @@
 .Antwort1{
    padding: 1px 3px;
    margin: 10px 10px 0px 10px;
-   background: #ffc100;
-   color: white;
+   background: white;
+   color: black;
    width: auto;
-   border: white;
-   border-radius: 20px;
+   
+   
+   border-radius: 9px;
    font-size: 14px;
+   
+   /* border: 10px;
+   border-style: double; */
+   border-color: var(--primary);
+  
+   
+}
+.Antwort1:hover{
+   color: white;
    cursor: pointer;
-   border: 10px;
-   border-style: double;
+   background-color: var(--primary);
 }
 
 .chatbox__button button,
