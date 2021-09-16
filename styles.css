@@ -74,7 +74,39 @@ body{
 
 .wrapper .top_navbar .top_menu ul{
   display: flex;
+  position: absolute;
+  left: 85%;
 }
+
+
+@media screen and (max-width:1110px) {
+  .wrapper .top_navbar .top_menu ul{
+    display: flex;
+    position: absolute;
+    left: 81%;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .wrapper .top_navbar .top_menu ul{
+    display: flex;
+    position: absolute;
+    left: 75%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .wrapper .top_navbar .top_menu ul{
+    display: none;
+  }
+}
+
+@media screen and (min-width:650px) {
+  #lineIcon{
+    display: none;
+  }
+}
+
 
 .wrapper .top_navbar .top_menu ul li a{
   display: block;
@@ -178,4 +210,49 @@ body{
   width: (100% - 70px);
   margin-left: 120px;
   margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hamburger div{
+  transform-origin: 0 0;
+  transition: 0.4s;
+}
+
+.hamburger:hover div:nth-child(2){
+  transform: translateX(10px);
+  background-color: black;
+}
+
+.hamburger.open div:nth-child(1) {
+  transform: translate(0px, -3px) rotate(45deg);
+}
+
+.hamburger.open div:nth-child(2) {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+.hamburger.open div:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.open:hover div{
+  background-color: black;
 }

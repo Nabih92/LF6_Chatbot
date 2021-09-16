@@ -16,7 +16,7 @@
 }
 
 .accordion {
-  width: 65%;
+  width: 100%;
   max-width: 986px;
   margin: 2rem auto;
 }
@@ -62,9 +62,10 @@
   html {
     font-size: 14px;
   }
+  .accordion-item-header {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
 }
-
-
 
 
 

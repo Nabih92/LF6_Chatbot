@@ -103,7 +103,7 @@
    width: 100%;
    align-items: center;
    background-color: var(--primary);
-   background-image: linear-gradient(to top, #ffffff55 , #00000025);
+   background-image: linear-gradient(to top, var(--primary) , #0000002b);
    border-radius: 0px 0px 20px 20px;
    padding: 10px 0px 10px 10px;
    top: 380px;
@@ -140,7 +140,7 @@
    color: #000;
    background-color: white;
    outline: none;
-   background-image: linear-gradient(to bottom, #ffffff , #aba9a952);
+   background-image: linear-gradient(to bottom, #ffffff , #00000025);
 }
 
 .userText {
@@ -189,13 +189,18 @@
    top: 37px;
    margin-left: -25px;
    margin-top: -25px;
-   /* border-top: 0px solid white;
-   border-right: 2px solid white;
-   border-bottom: 2px solid white;
-   border-left: 0px solid white; */
-   
    z-index: -1;
    background-image: linear-gradient(to bottom right, #ffffff75 , #00000052);
+}
+
+@media(max-width:767px) {
+   .HelpMessage{
+     width: 147px;
+   }
+   .HelpMessage:after{
+      left: 133px;
+      top: 36px;
+   }
 }
 
 .botText {
@@ -233,26 +238,75 @@
 
 @media screen and (max-width:600px) {
    .full-chat-block {
-       width: 100%;
-       border-radius: 0px;
+      width: 100%;
+      border-radius: 0px;
    }
    .chat-bar-collapsible {
-       position: fixed;
-       bottom: 0;
-       right: 0;
-       width: 100%;
-       background: white;
+      position: fixed;
+      bottom: 174px;
+      right: 34px;
+      width: 50%;
+      background: white;
    }
    .collapsible {
-       width: 100%;
-       border: 0px;
-       border-top: 3px solid white;
-       border-radius: 0px;
+      width: 100%;
+      border: 0px;
+      border-top: 3px solid white;
+      border-radius: 0px;
    }
    .collapsible2 {
       width: 100%;
   }
+   .outer-container{
+      min-height: 337px;
+   }
+   .chat-bar-input-block{
+      top: 337px;
+   }
 }
+
+
+@media screen and (max-height: 707px){
+   .chat-container {
+     max-height: 178px;
+     width: 100%;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     scroll-behavior: smooth;
+     hyphens: auto;
+   }
+   .outer-container {
+     min-height: 180px;
+     bottom: 0%;
+     position: relative;
+   }
+   .full-chat-block {
+     width: 640px;
+     background: white;
+     text-align: center;
+     overflow: auto;
+     scrollbar-width: none;
+     height: max-content;
+     transition: max-height 0.2s ease-out;
+   }
+   .content {
+     max-height: 496px;
+     overflow: auto;
+     transition: max-height 0.2s ease-out;
+     background-color: #f1f1f1;
+   }
+   .chat-bar-input-block{
+      top: 180px;
+   }
+   #userInput{
+      width:215%;
+   }
+   .chat-bar-collapsible{
+      bottom: 89px;
+      right: 137px;
+   }
+ }
 
 .Antwort1{
    padding: 1px 3px;
@@ -285,7 +339,7 @@
    border-bottom-right-radius: 50px;
    box-shadow: 0px 10px 15px rgb(0 0 0 / 10%);
    cursor: pointer;
-  background-image: linear-gradient(to bottom, #ffffff55 , #00000025);
+   background-image: linear-gradient(to bottom right, #ffffff75 , #00000037);
 }
 
 
@@ -306,7 +360,7 @@
    padding: 15px;
    border-radius: 20px 20px 0px 0px;
    width: 100%;
-   background-image: linear-gradient(to bottom, #ffffff75 , #00000037);
+   background-image: linear-gradient(to bottom, #FFC100 , #0000002e);
 }
 .chatbox__image--header {
    margin-right: 10px;

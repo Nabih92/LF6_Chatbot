@@ -6,16 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(".wrapper").toggleClass("collapse");
-        });
-        $(".sidebar").hover(function () {
-          $(".wrapper").toggleClass("collapse");
-        });
-      });
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="faqstyle.css">
     <link rel="stylesheet" href="chatbot.css">
@@ -75,9 +65,9 @@
       </div>
     </div>
 
-    <div class="wrapper collapse">
+    <div class="wrapper collapse" id="Wrapper">
       <div class="top_navbar">
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
           <div class="one"></div>
           <div class="two"></div>
           <div class="three"></div>
@@ -106,6 +96,7 @@
 
       <div class="sidebar">
         <ul>
+          <hr id="lineIcon" style="height: 1.5px; background-color: white; border: none; width: 25%;">
           <li>
             <a href="#">
               <span class="icon">
@@ -146,6 +137,32 @@
               <span class="title">About us</span>
             </a>
           </li>
+          <hr id="lineIcon" style="height: 1.5px; background-color: white; border: none; width: 50%;">
+          <li id="lineIcon">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-search"></i>
+              </span>
+              <span class="title">Search</span>
+            </a>
+          </li>
+          <li id="lineIcon">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-bell"></i>
+              </span>
+              <span class="title">Messages</span>
+            </a>
+          </li>
+          <li id="lineIcon">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="title">Account</span>
+            </a>
+          </li>
+          <hr id="lineIcon" style="height: 1.5px; background-color: white; border: none; width: 75%;">
         </ul>
       </div>
 
@@ -173,9 +190,10 @@
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="faqscript.js"></script>
     <script src="chat.js"></script>
     <script src="responses.js"></script>
+    <script src="sidebar.js"></script>
   </body>
 </html>
