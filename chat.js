@@ -7,25 +7,31 @@ for (let i = 0; i < coll.length; i++) {
         if(this.classList.value === "collapsible active"){
             let removeHelpMessage = document.getElementById("HelpMessageRemove");
             removeHelpMessage.style.display = "none";
+
             this.classList.toggle("collapsible2");
             this.classList.remove("collapsible");
             let chatboxDisplay = document.getElementById("showChat");
-            chatboxDisplay.style.display = "block";
-            chatboxDisplay.classList.toggle("animate__fadeInUp");
-            chatboxDisplay.classList.remove("animate__fadeOutDown");
+            chatboxDisplay.classList.toggle("active");
+            // chatboxDisplay.style.transform = "scale3d(1, 1, 1) skew(11deg, 0deg) rotateY(75deg) translateX(369px) translateY(284px) scaleY(0.1) scaleX(0.4)";
+            // setTimeout(() => {
+            //     chatboxDisplay.style.transform = "scale3d(1, 1, 1) translateX(-7px) translateY(21px)";
+            // }, 200);
+            chatboxDisplay.style.clipPath = "circle(100%)";
         }else{
+            let removeHelpMessage = document.getElementById("HelpMessageRemove");
             setTimeout(() => {
-                let removeHelpMessage = document.getElementById("HelpMessageRemove");
                 removeHelpMessage.style.display = "block";
-            }, 380);
-            let chatboxDisplay = document.getElementById("showChat");
-            chatboxDisplay.classList.remove("animate__fadeInUp");
-            chatboxDisplay.classList.toggle("animate__fadeOutDown");
+            }, 700);
+
             this.classList.toggle("collapsible");
             this.classList.remove("collapsible2");
-            setTimeout(() => {
-                chatboxDisplay.style.display = "none";
-            }, 400);
+            let chatboxDisplay = document.getElementById("showChat");
+            chatboxDisplay.classList.remove("active");
+            // chatboxDisplay.style.transform = "scale3d(1, 1, 1) skew(11deg, 0deg) rotateY(75deg) translateX(369px) translateY(284px) scaleY(0.1) scaleX(0.4)";
+            // setTimeout(() => {
+            //     chatboxDisplay.style.transform = "scale3d(1, 1, 1) skew(0deg, 0deg) rotateY(0deg) translateX(1000px) translateY(1000px) scaleY(0) scaleX(0)";
+            // }, 300);
+            chatboxDisplay.style.clipPath = "circle(0% AT 175% 225%)";
         }
     });
 }
