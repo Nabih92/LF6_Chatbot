@@ -310,3 +310,25 @@ body{
 .hamburger.open:hover div{
   background-color: black;
 }
+
+
+/* #LogoText{
+  transition: all 1s ease;
+  display: inline-block;
+  animation: tessst 1s ease;
+}
+
+@keyframes tessst{
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#LogoText.fade{
+  opacity: 1;
+  transform: translateY(0px);
+} */

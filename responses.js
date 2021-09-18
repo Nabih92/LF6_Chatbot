@@ -8,9 +8,9 @@ var allgemeinAntworte = `
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general6"><span>hier kommt etwas rein</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general8"><span>Alle Aussagen treffen nicht zu!</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
-    document.getElementById("general8").scrollIntoView(true);
+    document.getElementById("general11").scrollIntoView(true);
   </script>
 </p>`;
 
@@ -63,9 +63,9 @@ var macAntworte = `
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac6"><span>hier kommt etwas rein</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac8"><span>Alle Aussagen treffen nicht zu!</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
-    document.getElementById("mac8").scrollIntoView(true);
+    document.getElementById("mac11").scrollIntoView(true);
   </script>
 </p>`;
 
@@ -79,17 +79,17 @@ var infraAntworte = `
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra6"><span>hier kommt etwas rein</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra8"><span>Alle Aussagen treffen nicht zu!</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
-    document.getElementById("infra8").scrollIntoView(true);
+    document.getElementById("infra11").scrollIntoView(true);
   </script>
 </p>`;
 
 var feedbackOnFAQ = `
-<p class="botText"><span style="margin-top:10px">Hat es dir geholfen?</span></p>
+<p class="botText"><span style="margin-top:10px">Hat es Ihnen geholfen?</span></p>
 <p id="feedbackOnFAQAnswers" style="text-align: center;">
-  <button onclick="lastAnswer(this.id, this.parentNode.id)" class="Antwort1" id="yes"><span>Yes</span></button>
-  <button onclick="lastAnswer(this.id, this.parentNode.id)" class="Antwort1" id="no"><span>No</span></button>
+  <button onclick="lastAnswer(this.id, this.parentNode.id)" class="Antwort1" id="yes"><span>Ja</span></button>
+  <button onclick="lastAnswer(this.id, this.parentNode.id)" class="Antwort1" id="no"><span>Nein</span></button>
   <script>
     document.getElementById("no").scrollIntoView(true);
   </script>
@@ -125,19 +125,19 @@ function clearCurrentButtons(id, parentId) {
     botHtml = '<p class="botText"><span>' + Message + "</span></p>";
     $("#chatbox").append(botHtml);
   }
-  else if (parentId == "generalAnswers" && id != "general8"
-          || parentId == "linuxAnswers" &&  id != "linux8"
-          || parentId == "windowsAnswers" && id != "windows8"
-          || parentId == "macAnswers" && id != "mac8"
-          || parentId == "infraAnswers" && id != "infra8")
+  else if (parentId == "generalAnswers" && id != "general11"
+          || parentId == "linuxAnswers" &&  id != "linux11"
+          || parentId == "windowsAnswers" && id != "windows11"
+          || parentId == "macAnswers" && id != "mac11"
+          || parentId == "infraAnswers" && id != "infra11")
   {
     Message = "ok, ich habe eine Lösung in FAQ gefunden!";
     botHtml = '<p class="botText"><span>' + Message + "</span></p>";
     $("#chatbox").append(botHtml);
-  }else if(id == "general8" || id == "linux8" || id == "windows8" || id == "mac8" || id == "infra8"){
+  }else if(id == "general11" || id == "linux11" || id == "windows11" || id == "mac11" || id == "infra11"){
     MitarbeiterName();
     direct = true;
-
+    
   }
 }
 
@@ -168,26 +168,28 @@ function showFeedbackOnFAQ(id, parentId) {
   }
   // Show Answer in FAQ
   
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i <= 11; i++) {
     // Allgemein
     let test = ["general", "linux", "windows", "mac", "Infra"];
     for(let I = 0; I < test.length; I++){
       if(id === test[I] + i){
         let Frage = document.getElementById(`${test[I]}Q` + i);
         let Antwort = document.getElementById(`${test[I]}A` + i);
-        Frage.classList.toggle("active");
-        if(Frage.classList.contains("active")) {
-          Antwort.style.maxHeight = Antwort.scrollHeight + "px";
-          Frage.classList.toggle("activeBackground");
-        }else if(Frage.classList.contains("activeBackground")){
-          Frage.className = "accordion-item-header active secondactiveBackground";
-        }else if(Frage.classList.contains("secondactiveBackground")){
-          Frage.className = "accordion-item-header active activeBackground";
+        if(i != 11){
+          Frage.classList.toggle("active");
+          if(Frage.classList.contains("active")) {
+            Antwort.style.maxHeight = Antwort.scrollHeight + "px";
+            Frage.classList.toggle("activeBackground");
+          }else if(Frage.classList.contains("activeBackground")){
+            Frage.className = "accordion-item-header active secondactiveBackground";
+          }else if(Frage.classList.contains("secondactiveBackground")){
+            Frage.className = "accordion-item-header active activeBackground";
+          }
+          let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
+          window.scrollTo({top: y, behavior: 'smooth'});
         }
-        let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
-        window.scrollTo({top: y, behavior: 'smooth'});
       }
-      else if(id === test[I] + 8 && i == 8){
+      else if(id === test[I] + 11 && i == 11){
         clearCurrentButtons(id, parentId);
       }
     }
@@ -196,37 +198,49 @@ function showFeedbackOnFAQ(id, parentId) {
 
 function MitarbeiterName(){
   var mitarbeiter;
+  var Bereich;
 
   $("#chatbox").append(finalInput);
   var finalInputText = document.getElementById("lastAnswerText");
   
   if(mitarbeiter_Bereich == "generalAnswers"){
-    mitarbeiter = "unsere Mitarbeiterin Tina";
+    mitarbeiter = "Unsere Spezialistin Tina";
+    Bereich = "\"Allgemein\"";
   }
   else if(mitarbeiter_Bereich == "linuxAnswers"){
-    mitarbeiter = "unser Mitarbeiter Ali";
+    mitarbeiter = "Unser Spezialist Ali";
+    Bereich = "\"Linux\"";
   }
   else if(mitarbeiter_Bereich == "windowsAnswers"){
-    mitarbeiter = "unser Mitarbeiter Jack";
+    mitarbeiter = "Unser Spezialist Jack";
+    Bereich = "\"Windows\"";
   }
   else if(mitarbeiter_Bereich == "macAnswers"){
-    mitarbeiter = "unsere Mitarbeiterin Ella";
+    mitarbeiter = "Unsere Mitarbeiterin Ella";
+    Bereich = "\"Mac\"";
   }
   else if(mitarbeiter_Bereich == "infraAnswers"){
-    mitarbeiter = "unser Mitarbeiter Robin";
+    mitarbeiter = "Unser Mitarbeiter Robin";
+    Bereich = "\"Infrastruktur & Netzwerke\"";
   }
   
-  finalInputText.innerHTML= `Bleiben Sie bitte dran, ${mitarbeiter} wird Sie in kurze kontaktieren.`;
-  answer = `bitte warten Sie, ${mitarbeiter} ist in kurze da.`;
+  finalInputText.innerHTML= `Beschreiben Sie bitte ihr Anlegen in dem Eingabefeld!`;
+
+  Hinweis1 = "Bitte schließen Sie das Chatbot nicht.";
+  Hinweis2 = "Warten Sie bitte.";
+  answer = `<br> ${mitarbeiter} für den Bereich ${Bereich} wird in kurze für Sie da sein.`;
 
   finalInputText.scrollIntoView(true);
   var UserInputText = document.getElementById("textInput");
-  UserInputText.placeholder = "Bitte schreiben Sie hier...";
+  UserInputText.placeholder = "Schreiben Sie bitte hier...";
 
   $('#textInput').prop("disabled", false);
 }
 
 var answer;
+var interact;
+var Hinweis1;
+var Hinweis2;
 
 function lastAnswer(id, parentId){
   clearCurrentButtons(id, parentId);
@@ -238,7 +252,7 @@ function lastAnswer(id, parentId){
     var finalInputText = document.getElementById("lastAnswerText");
     finalInputText.innerHTML= "Wir bedanken uns bei Ihnen. <br> Wir werden uns auf ein Feedback freuen.";
     UserInputText.placeholder= "Bitte schreiben Sie hier...";
-    
+    finalInputText.scrollIntoView(true);
     $('#textInput').prop("disabled", false);
   }else if(id == "no"){
     MitarbeiterName();
@@ -252,44 +266,47 @@ function getBotResponse(input){
     UserInputText.placeholder = "Auf Wiedersehen!";
     return answer;
   }
-  else if (input !== ""){
-    return answer;
+  else if (input !== "" && interact == undefined){
+    interact = true;
+    return Hinweis1 + answer;
+  }else if(input !== "" && interact == true){
+    return Hinweis2 + answer;
   }
 }
 
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        $(".botText").remove();
-        $("#linuxAnswers").remove();
-        $("#generalAnswers").remove();
-        $("#windowsAnswers").remove();
-        $("#macAnswers").remove();
-        $("#infraAnswers").remove();
-        $("#feedbackOnFAQAnswers").remove();
-        $("#firstBtns").remove();
-        $(".userText").remove();
-        for (let i = 0; i < 100; i++) {
-            let test = document.getElementById("breakStatement");
-            $("#breakStatement").remove();
-        }
-        let MyResetButtons = `
-        <br id="breakStatement">
-        <p id="botStarterMessage" class="botText"><span>Hallo, ich heiße BumbleBee! wie kann ich dir helfen?</span></p>
-        <p id="firstBtns" style="text-align: initial;">
-          <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="linux"><span>Linux OS</span></button>
-          <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="winodws"><span>Windows OS</span></button>
-          <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="mac"><span>Mac OS</span></button>
-          <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="infra"><span>Infrastruktur & Netzwerke</span></button>
-          <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="general"><span>Allgemein</span></button>
-        </p>`;
+  coll[i].addEventListener("click", function () {
+    $(".botText").remove();
+    $("#linuxAnswers").remove();
+    $("#generalAnswers").remove();
+    $("#windowsAnswers").remove();
+    $("#macAnswers").remove();
+    $("#infraAnswers").remove();
+    $("#feedbackOnFAQAnswers").remove();
+    $("#firstBtns").remove();
+    $(".userText").remove();
+    for (let i = 0; i < 100; i++) {
+        let test = document.getElementById("breakStatement");
+        $("#breakStatement").remove();
+    }
+    let MyResetButtons = `
+    <br id="breakStatement">
+    <p id="botStarterMessage" class="botText"><span>Hallo, ich heiße BumbleBee! wie kann ich Ihnen helfen?</span></p>
+    <p id="firstBtns" style="text-align: initial;">
+      <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="linux"><span>Linux OS</span></button>
+      <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="winodws"><span>Windows OS</span></button>
+      <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="mac"><span>Mac OS</span></button>
+      <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="infra"><span>Infrastruktur & Netzwerke</span></button>
+      <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="general"><span>Allgemein</span></button>
+    </p>`;
 
-        setTimeout(() => {
-          $("#chatbox").append(MyResetButtons);
-        }, 400);
-        let TextIput = document.getElementById("textInput");
-        TextIput.value = "";
-        $('#textInput').prop("disabled", true);
-    });
+    setTimeout(() => {
+      $("#chatbox").append(MyResetButtons);
+    }, 400);
+    let TextIput = document.getElementById("textInput");
+    TextIput.value = "";
+    $('#textInput').prop("disabled", true);
+  });
 }
