@@ -154,11 +154,12 @@
         <div class="wrapper2">
             <div class="title">Kontakt</div>
             <div class="form">
+              <form class="FORM">
                 <h3>1. Ihre Informationen</h3><br>
                 <div class="inputfield">
                     <label>Titel</label>
                     <div class="custom_select">
-                        <select>
+                        <select name="titel">
                             <option value="" disabled hidden selected>Bitte Auswählen</option>
                             <option value="kein">Kein</option>
                             <option value="doctor">Dr.</option>
@@ -171,7 +172,7 @@
                 <div class="inputfield">
                     <label>Anrede<a style="color: red;font-size: 18px;">*</a></label>
                     <div class="custom_select">
-                        <select>
+                        <select name="anrede">
                             <option value="" disabled hidden selected>Bitte Auswählen</option>
                             <option value="male">Herr</option>
                             <option value="female">Frau</option>
@@ -181,41 +182,41 @@
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>Vorname<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" name="vorname" required>
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Nachname<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" name="nachname" required>
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Firma</label>
-                    <input type="text" class="input">
+                    <input type="text" class="input" name="firma">
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>Straße<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" required name="straße">
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Hausnr.<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" required name="hausnr">
                     </div>
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>PLZ<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" required name="plz">
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Ort<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input" required name="ort">
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Geschlecht<a style="color: red;font-size: 18px;">*</a></label>
                     <div class="custom_select">
-                        <select required>
+                        <select required name="gender">
                             <option value="" disabled hidden selected>Bitte auswählen</option>
                             <option value="male">Männlich</option>
                             <option value="female">Weiblich</option>
@@ -225,16 +226,16 @@
                 </div>
                 <div class="inputfield">
                     <label>Geburtsdatum<a style="color: red;font-size: 18px;">*</a></label>
-                    <input type="date" class="input" required>
+                    <input type="date" class="input" required name="birthday">
                 </div>
                 <div class="inputfield">
                     <label>Telefon<a style="color: red;font-size: 18px;">*</a></label>
-                    <input type="text" class="input" required>
+                    <input type="text" class="input" required name="telefon">
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>Email Adresse<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" class="input email" required name="email">
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Email Adresse Bestätigen<a style="color: red;font-size: 18px;">*</a></label>
@@ -243,23 +244,24 @@
                 </div>
                 <br><br>
                 <div class="inputfield" id="col1">
-                    <label>Nachricht / Problembeschreibung<a style="color: red;font-size: 18px;">*</a></label>
+                  <label>Nachricht / Problembeschreibung<a style="color: red;font-size: 18px;">*</a></label>
                 </div>
                 <div class="inputfield" id="col1">
-                    <textarea class="input" rows="4" cols="50" name="problembeschreibung" required placeholder="Bitte hier schreiben"></textarea>
+                  <textarea class="input message" rows="4" cols="50" name="problembeschreibung" required placeholder="Bitte hier schreiben"></textarea>
                 </div>
                 <br>
                 <p><a style="color: red;font-size: 18px;">*</a>Pflichtfeld</p><br>
                 <div class="inputfield terms" id="col1">
-                    <label class="check">
-                        <input type="checkbox" required>
-                        <span class="checkmark"></span>
-                    </label>
-                    <p>Mit dem Anhaken des Bestätigungskästchens erkläre ich mich mit der Verarbeitung meiner personenbezogenen Daten einverstanden.</p>
+                  <label class="check">
+                      <input type="checkbox" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <p>Mit dem Anhaken des Bestätigungskästchens erkläre ich mich mit der Verarbeitung meiner personenbezogenen Daten einverstanden.</p>
                 </div><br>
                 <div class="inputfield" id="col1">
-                    <input type="submit" value="Senden" class="btn">
+                  <input type="submit" name="submit" value="Senden" id="btn" class="btn">
                 </div>
+              </form>
             </div>
         </div>
       </div>
@@ -269,5 +271,7 @@
     <script src="faqscript.js"></script>
     <script src="chat.js"></script>
     <script src="responses.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
