@@ -39,78 +39,94 @@
     ],
     "LinuxOS":[
         {
-            "Frage": "Frage1",
-            "Antwort": "Antwort1"
+            "Frage": "Was ist Linux?",
+            "Antwort": "Bei Linux handelt es sich um ein Open-Source-Betriebssystem, das auf Unix basiert. Es wird unter der GNU General Public License vertrieben."
         },
         {
-            "Frage": "Frage2",
-            "Antwort": "Antwort2"
+            "Frage": "Kann ich mein Betriebssystem von Linux in Windows ändern?",
+            "Antwort": "Ja, wenn Ihre Computerhardware die Mindestanforderungen für Windows erfüllt. Um zu ermitteln, ob die Hardware Ihres Computers Windows-fähig ist und die Mindestsystemvoraussetzungen zur Installation von Windows erfüllt, rufen Sie die Microsoft Windows-Website (in englischer Sprache) auf."
         },
         {
-            "Frage": "Frage3",
-            "Antwort": "Antwort3"
+            "Frage": "Wie kann ich Windows in Linux öffnen?",
+            "Antwort": "Windows ist in Linux nicht installiert. Wenn Sie Microsoft Windows verwenden möchten, müssen Sie es separat installieren."
         },
         {
-            "Frage": "Frage4",
-            "Antwort": "Antwort4"
+            "Frage": "Kann ich bei Linux Software verwenden, die unter Windows funktioniert?",
+            "Antwort": "Windows funktioniert nur dann unter Linux, wenn zusätzliche Emulationssoftware verwendet wird. Wenn Sie Windows-Software verwenden möchten, müssen Sie das Windows-Betriebssystem auf Ihrem Computer installieren."
         },
         {
-            "Frage": "Frage5",
-            "Antwort": "Antwort5"
+            "Frage": "Was ist Ubuntu eigentlich genau?",
+            "Antwort": "Ubuntu ist der Name einer Linux-Distribution. Mehr über Ubuntu gibt es im Artikel Einsteiger und in der Wikipedia."
         },
         {
-            "Frage": "Frage6",
-            "Antwort": "Antwort6"
+            "Frage": "Woher kommt der Name Ubuntu?",
+            "Antwort": "Das Wort Ubuntu kommt aus den Sprachen der Zulu und der Xhosa in Südafrika. Es steht für „Menschlichkeit“ und „Gemeinsinn“, aber auch für den Glauben an ein „universelles Band des Teilens, das alles Menschliche verbindet“. Aus der Bedeutung des Begriffs Ubuntu leiten sich auch die Grundsätze der Distribution ab."
         },
         {
-            "Frage": "Frage7",
-            "Antwort": "Antwort7"
+            "Frage": "Welche Grundsätze hat Ubuntu?",
+            "Antwort": "Die Grundsätze von Ubuntu lassen sich mit einigen Schlagworten zusammenfassen. Ubuntu ist freie und quelloffene Software, die nach Aussagen ihres Gründers und Förderers Mark Shuttleworth immer frei bleiben wird und darüber hinaus kostenlos erhältlich ist."
         },
         {
-            "Frage": "Frage8",
-            "Antwort": "Antwort8"
+            "Frage": "Wie oft erscheint eine neue Version von Ubuntu?",
+            "Antwort": "Eine neue Version erscheint in der Regel alle sechs Monate, jeweils im April und Oktober eines Jahres. Die Versionsnummer setzt sich aus dem Jahr und dem Monat der Veröffentlichung zusammen, zusätzlich erhält jede Version einen Codenamen. So ist die Bezeichnung einer Version, z.B. Ubuntu 12.10 \"Quantal Quetzal\", ein Hinweis auf die Veröffentlichung im Oktober 2012."
         },
         {
-            "Frage": "Frage9",
-            "Antwort": "Antwort9"
+            "Frage": "Rechte und Lizenzen - Wie darf Ubuntu benutzt werden?",
+            "Antwort": "Alle standardmäßig von Ubuntu installierten Programme sowie Ubuntu selbst stehen unter der GNU General Public License (GPL) und sind damit freie Software, die beliebig oft kopiert und weitergegeben werden darf. Auch der Quellcode darf selbst verändert werden, sofern die Veränderung dokumentiert und der Original-Autor angegeben wird."
+        },
+        {
+            "Frage": "Wie installiere ich Ubuntu neu?",
+            "Antwort": "Erstellen Sie zuerst eine Sicherungskopie all Ihrer persönlichen Dateien und Daten auf einem externen Speichergerät, wenn möglich. Wählen Sie dann eine der folgenden Optionen aus, um Ubuntu neu zu installieren:<br><br> - Rufen Sie www.ubuntu.com (in englischer Sprache) auf, um ein kostenloses Abbild des Betriebssystems herunterzuladen. Siehe die Ubuntu Reinstallation-Webseite (Ubuntu-Neuinstallation) (in englischer Sprache) für weitere Informationen.<br><br> - Wenn Ihr Computer mit Ubuntu geliefert wurde und immer noch durch die Garantie abgedeckt ist, kontaktieren Sie den HP Support, um eine Disk für die Neuinstallation zu beziehen."
+        },
+        {
+            "Frage": "Wo befinden sich die Anleitungen/Dokumentationen zu Ubuntu?",
+            "Antwort": "Die umfangreichste Sammlung deutschsprachiger Anleitungen für Ubuntu ist das Wiki von ubuntuusers.de. Außerdem gibt es verschiedene Quellen, die kostenlose Anleitungen zu Ubuntu Linux anbieten. "
         }
     ],
     "WindowsOS":[
         {
-            "Frage": "Frage1",
-            "Antwort": "Antwort1"
+            "Frage": "Was kostet Windows 10?",
+            "Antwort": "Windows 10 wird wieder in verschiedenen Varianten auf den Markt kommen. Neben den Home- und Professional-Versionen gibt es auch die zur Vorinstallation auf Fertig-PCs verwendete Core-Version, die der Home-Variante entspricht. Hinzu kommt die Enterprise-Ausgabe, die ausschließlich als Volumenlizenz vertrieben wird. Bei Windows 10 Enterprise liegen noch keine Angaben vor, zu den Endkunden-Versionen sind die Preise aber schon jetzt bekannt. <br><br> Windows 10 Home wird in Deutschland mit einer offiziellen Preisempfehlung von 119 Euro angeboten, während Windows 10 Professional 199 Euro kostet. Diese Angaben gelten allerdings nur als Richtwert und dürften recht bald unterschritten werden - außerdem gelten sie nur für die normale \"Boxed\" Verkaufsversionen, also die Ausgabe mit kompletter Verpackung, einigen enthaltenen Support-Dienstleistungen und beigelegten DVD-Installationsmedien."
         },
         {
-            "Frage": "Frage2",
-            "Antwort": "Antwort2"
+            "Frage": "Wie schaut es mit einem Windows 10-Key und der Aktivierung aus?",
+            "Antwort": "Benutzer bekommen beim Windows 10-Upgrade keinen Produktkey. Eine Neuinstallation nach dem Upgrade ist möglich, ohne dass man einen Key eingeben muss. Die automatische Aktivierung des frisch upgegradeten Windows 10 muss über Internet laufen. Es gibt zur Zeit keinen Weg, dies anderweitig zu machen. Bei signifikanten Hardwareänderungen wird eine Aktivierung per Telefon notwendig."
         },
         {
-            "Frage": "Frage3",
-            "Antwort": "Antwort3"
+            "Frage": "Welche Windows 10-Versionen (SKUs) gibt es?",
+            "Antwort": "Microsoft hat die Details im Blog-Beitrag Introducing Windows 10 Editions veröffentlicht"
         },
         {
-            "Frage": "Frage4",
-            "Antwort": "Antwort4"
+            "Frage": "Welche Upgrade-Pfade sind möglich?",
+            "Antwort": "Die Upgrade-Pfade von Windows 7 (Home, Professional, Ultimate) und Windows 8.1 (Core, Pro) auf Windows 10 sind in diesem Blog-Beitrag veröffentlicht worden."
         },
         {
-            "Frage": "Frage5",
-            "Antwort": "Antwort5"
+            "Frage": "Wann erscheint Windows 11?",
+            "Antwort": "Windows 11 wird laut Microsoft am 5. Oktober erscheinen, zunächst aber nur für neue PCs. Ein Update für ältere Geräte soll später folgen. Hier müsst ihr euch noch bis ins neue Jahr gedulden."
         },
         {
-            "Frage": "Frage6",
-            "Antwort": "Antwort6"
+            "Frage": "Kostenloses Upgrade erst 2022?",
+            "Antwort": "Auf Twitter hat der offizielle Windows-Account preisgegeben, dass das Upgrade von bestehenden Windows 10-Installationen im ersten Halbjahr 2022 ausgerollt wird. Der Rollout soll in Phasen erfolgen, nicht alle PCs sollten daher direkt das Update erhalten."
         },
         {
-            "Frage": "Frage7",
-            "Antwort": "Antwort7"
+            "Frage": "Kann ich Windows 11 bereits testen?",
+            "Antwort": "Teilnehmer an Microsofts Insider-Programm können bereits jetzt das neue Betriebssystem testen. Hier werden in regelmäßigen Abständen neue Builds des kommenden Betriebssystems veröffentlicht, die jedoch noch nicht zu 100 Prozent marktreif sind. Die Entwickler nutzen die Plattform, um neue Funktionen unter realistischen Bedingungen zu testen und flexibel auf Fehler zu reagieren."
         },
         {
-            "Frage": "Frage8",
-            "Antwort": "Antwort8"
+            "Frage": "Wird es ein kostenloses Upgrade auf Windows 11 geben?",
+            "Antwort": "Windows 11 wird als kostenloses Update für kompatible Windows 10-Rechner angeboten werden. Das wurde bereits mehrfach bestätigt. Allerdings kann es sein, das nicht alle Windows 10-PCs mit der Hardware ausgestattet sind, die das neue OS erfordert."
         },
         {
-            "Frage": "Frage9",
-            "Antwort": "Antwort9"
+            "Frage": "Wird es eine Upgrade von Windows 7 oder 8 auf Windows 11 geben?",
+            "Antwort": "Im Vorfeld gab es Gerüchte, dass Nutzer von Windows 7 und 8 auf das neue Windows 11 kostenlos upgraden können. Das wurde bislang noch nicht von Microsoft bestätigt. Ein Weg dazu könnte ein verspätetes Update auf Windows 10 sein. <br><br> Ob euer Rechner für das kostenlose Update technisch qualifiziert müsst ihr im Vorfeld prüfen. Denn Microsoft hat deutlich höhere Ansprüche an die Hardware, als bei vorherigen Betriebssystemen. Nachfolgend findet ihr die entsprechenden Systemanforderungen."
+        },
+        {
+            "Frage": "Kann ich ein Upgrade auf Windows 11 rückgängig machen?",
+            "Antwort": "Aus Support-Dokumenten von Microsoft und Lenovo geht hervor, dass das Upgrade einen 10-tägigen Testzeitraum erlaubt. Innerhalb dieser 10 Tage könnt ihr jederzeit das Upgrade rückgängig machen. Danach könnt ihr nur noch über eine Neuinstallation zu Windows 10 zurückkehren."
+        },
+        {
+            "Frage": "Wie viel wird Windows 11 kosten?",
+            "Antwort": "Hierzu hat sich Microsoft noch nicht geäußert. Der Hersteller verfolgte in der Vergangenheit aber eine recht vorhersehbare Preispolitik. Die Home-Version von Windows 7 kostete 150 Euro und die Professional-Version 285 Euro. Windows 10 war in einigen belangen günstiger. Die Home-Version waren für 145 Euro und Professional für 259 Euro erhältlich. Es ist daher nicht unwahrscheinlich, dass die Verkaufsversionen von Windows 11 zu ähnlichen Preisen angeboten werden."
         }
     ],
     "MacOS":[

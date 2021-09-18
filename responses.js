@@ -17,33 +17,39 @@ var allgemeinAntworte = `
 
 var linuxAntworte = `
 <p id="linuxAnswers" style="text-align: center;">
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux0"><span>Definitionen und Überblick</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux1"><span>Debian GNU/Linux bekommen und installieren</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux2"><span>Eine Debian-Distribution auswählen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux3"><span>IKompatibilitätsfragen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux4"><span>Für Debian-Systeme verfügbare Software</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux6"><span>hier kommt etwas rein</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux8"><span>Alle Aussagen treffen nicht zu!</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux0"><span>Was ist Linux?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux1"><span>Kann ich mein Betriebssystem von Linux in Windows ändern?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux2"><span>Wie kann ich Windows in Linux öffnen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux3"><span>Kann ich bei Linux Software verwenden, die unter Windows funktioniert?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux4"><span>Was ist Ubuntu eigentlich genau?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux5"><span>Woher kommt der Name Ubuntu?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux6"><span>Welche Grundsätze hat Ubuntu?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux7"><span>Wie oft erscheint eine neue Version von Ubuntu?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux8"><span>Rechte und Lizenzen - Wie darf Ubuntu benutzt werden?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux9"><span>Wie installiere ich Ubuntu neu?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux10"><span>Wo befinden sich die Anleitungen/Dokumentationen zu Ubuntu?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="linux11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
-    document.getElementById("linux8").scrollIntoView(true);
+    document.getElementById("linux11").scrollIntoView(true);
   </script>
 </p>`;
 
 var windowsAntworte = `
 <p id="windowsAnswers" style="text-align: center;">
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows0"><span>Definitionen und Überblick</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows1"><span>Debian GNU/Linux bekommen und installieren</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows2"><span>Eine Debian-Distribution auswählen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows3"><span>IKompatibilitätsfragen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows4"><span>Für Debian-Systeme verfügbare Software</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows6"><span>hier kommt etwas rein</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows8"><span>Alle Aussagen treffen nicht zu!</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows0"><span>Was kostet Windows 10?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows1"><span>Wie schaut es mit einem Windows 10-Key und der Aktivierung aus?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows2"><span>Welche Windows 10-Versionen (SKUs) gibt es?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows3"><span>Welche Upgrade-Pfade sind möglich?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows4"><span>Wann erscheint Windows 11?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows5"><span>Kostenloses Upgrade erst 2022?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows6"><span>Kann ich Windows 11 bereits testen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows7"><span>Wird es ein kostenloses Upgrade auf Windows 11 geben?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows8"><span>Wird es eine Upgrade von Windows 7 oder 8 auf Windows 11 geben?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows9"><span>Kann ich ein Upgrade auf Windows 11 rückgängig machen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows10"><span>Wie viel wird Windows 11 kosten?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
-    document.getElementById("windows8").scrollIntoView(true);
+    document.getElementById("windows11").scrollIntoView(true);
   </script>
 </p>`;
 
@@ -99,6 +105,8 @@ var finalInput = `
 
 var mitarbeiter_Bereich;
 var einmal;
+var direct = false;
+
 function clearCurrentButtons(id, parentId) {
   let bereich = document.getElementById(id).innerHTML;
   let disableButtons = document.getElementById(parentId);
@@ -116,10 +124,20 @@ function clearCurrentButtons(id, parentId) {
     Message = "ok, um was handelt es sich genau?";
     botHtml = '<p class="botText"><span>' + Message + "</span></p>";
     $("#chatbox").append(botHtml);
-  }else if (parentId == "generalAnswers" || parentId == "linuxAnswers" || parentId == "windowsAnswers" || parentId == "macAnswers" || parentId == "infraAnswers"){
+  }
+  else if (parentId == "generalAnswers" && id != "general8"
+          || parentId == "linuxAnswers" &&  id != "linux8"
+          || parentId == "windowsAnswers" && id != "windows8"
+          || parentId == "macAnswers" && id != "mac8"
+          || parentId == "infraAnswers" && id != "infra8")
+  {
     Message = "ok, ich habe eine Lösung in FAQ gefunden!";
     botHtml = '<p class="botText"><span>' + Message + "</span></p>";
     $("#chatbox").append(botHtml);
+  }else if(id == "general8" || id == "linux8" || id == "windows8" || id == "mac8" || id == "infra8"){
+    MitarbeiterName();
+    direct = true;
+
   }
 }
 
@@ -145,72 +163,67 @@ function showLevel1Answers(id, parentId) {
 
 function showFeedbackOnFAQ(id, parentId) {
   clearCurrentButtons(id, parentId);
-  $("#chatbox").append(feedbackOnFAQ);
-  
+  if(direct === false){
+    $("#chatbox").append(feedbackOnFAQ);
+  }
   // Show Answer in FAQ
   
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 12; i++) {
     // Allgemein
-    if(id === "general" + i){
-      let Frage = document.getElementById("AllgemeinFrage" + i);
-      let Antwort = document.getElementById("AllgemeinAntwort" + i);
-      Frage.classList.toggle("active");
-      if(Frage.classList.contains("active")) {
-        Antwort.style.maxHeight = Antwort.scrollHeight + "px";
-        Frage.classList.toggle("activeBackground");
+    let test = ["general", "linux", "windows", "mac", "Infra"];
+    for(let I = 0; I < test.length; I++){
+      if(id === test[I] + i){
+        let Frage = document.getElementById(`${test[I]}Q` + i);
+        let Antwort = document.getElementById(`${test[I]}A` + i);
+        Frage.classList.toggle("active");
+        if(Frage.classList.contains("active")) {
+          Antwort.style.maxHeight = Antwort.scrollHeight + "px";
+          Frage.classList.toggle("activeBackground");
+        }else if(Frage.classList.contains("activeBackground")){
+          Frage.className = "accordion-item-header active secondactiveBackground";
+        }else if(Frage.classList.contains("secondactiveBackground")){
+          Frage.className = "accordion-item-header active activeBackground";
+        }
+        let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
+        window.scrollTo({top: y, behavior: 'smooth'});
       }
-      let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
-      window.scrollTo({top: y, behavior: 'smooth'});
-    }
-    // Linux
-    else if(id === "linux" + i){
-      let Frage = document.getElementById("LinuxFrage" + i);
-      let Antwort = document.getElementById("LinuxAntwort" + i);
-      Frage.classList.toggle("active");
-      if(Frage.classList.contains("active")) {
-        Antwort.style.maxHeight = Antwort.scrollHeight + "px";
-        Frage.classList.toggle("activeBackground");
+      else if(id === test[I] + 8 && i == 8){
+        clearCurrentButtons(id, parentId);
       }
-      let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
-      window.scrollTo({top: y, behavior: 'smooth'});
-    }
-    // Windows
-    else if(id === "windows" + i){
-      let Frage = document.getElementById("WindowsFrage" + i);
-      let Antwort = document.getElementById("WindowsAntwort" + i);
-      Frage.classList.toggle("active");
-      if(Frage.classList.contains("active")) {
-        Antwort.style.maxHeight = Antwort.scrollHeight + "px";
-        Frage.classList.toggle("activeBackground");
-      }
-      let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
-      window.scrollTo({top: y, behavior: 'smooth'});
-    }
-    // Mac
-    else if(id === "mac" + i){
-      let Frage = document.getElementById("MacFrage" + i);
-      let Antwort = document.getElementById("MacAntwort" + i);
-      Frage.classList.toggle("active");
-      if(Frage.classList.contains("active")) {
-        Antwort.style.maxHeight = Antwort.scrollHeight + "px";
-        Frage.classList.toggle("activeBackground");
-      }
-      let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
-      window.scrollTo({top: y, behavior: 'smooth'});
-    }
-    // Infrastruktur & Netzwerke
-    else if(id === "Infra" + i){
-      let Frage = document.getElementById("WindowsFrage" + i);
-      let Antwort = document.getElementById("WindowsAntwort" + i);
-      Frage.classList.toggle("active");
-      if(Frage.classList.contains("active")) {
-        Antwort.style.maxHeight = Antwort.scrollHeight + "px";
-        Frage.classList.toggle("activeBackground");
-      }
-      let y = Frage.getBoundingClientRect().top + window.pageYOffset + -200;
-      window.scrollTo({top: y, behavior: 'smooth'});
     }
   }
+}
+
+function MitarbeiterName(){
+  var mitarbeiter;
+
+  $("#chatbox").append(finalInput);
+  var finalInputText = document.getElementById("lastAnswerText");
+  
+  if(mitarbeiter_Bereich == "generalAnswers"){
+    mitarbeiter = "unsere Mitarbeiterin Tina";
+  }
+  else if(mitarbeiter_Bereich == "linuxAnswers"){
+    mitarbeiter = "unser Mitarbeiter Ali";
+  }
+  else if(mitarbeiter_Bereich == "windowsAnswers"){
+    mitarbeiter = "unser Mitarbeiter Jack";
+  }
+  else if(mitarbeiter_Bereich == "macAnswers"){
+    mitarbeiter = "unsere Mitarbeiterin Ella";
+  }
+  else if(mitarbeiter_Bereich == "infraAnswers"){
+    mitarbeiter = "unser Mitarbeiter Robin";
+  }
+  
+  finalInputText.innerHTML= `Bleiben Sie bitte dran, ${mitarbeiter} wird Sie in kurze kontaktieren.`;
+  answer = `bitte warten Sie, ${mitarbeiter} ist in kurze da.`;
+
+  finalInputText.scrollIntoView(true);
+  var UserInputText = document.getElementById("textInput");
+  UserInputText.placeholder = "Bitte schreiben Sie hier...";
+
+  $('#textInput').prop("disabled", false);
 }
 
 var answer;
@@ -228,36 +241,7 @@ function lastAnswer(id, parentId){
     
     $('#textInput').prop("disabled", false);
   }else if(id == "no"){
-
-    var mitarbeiter;
-
-    $("#chatbox").append(finalInput);
-    var finalInputText = document.getElementById("lastAnswerText");
-    
-    if(mitarbeiter_Bereich == "generalAnswers"){
-      mitarbeiter = "unsere Mitarbeiterin Tina";
-    }
-    else if(mitarbeiter_Bereich == "linuxAnswers"){
-      mitarbeiter = "unser Mitarbeiter Ali";
-    }
-    else if(mitarbeiter_Bereich == "windowsAnswers"){
-      mitarbeiter = "unser Mitarbeiter Jack";
-    }
-    else if(mitarbeiter_Bereich == "macAnswers"){
-      mitarbeiter = "unsere Mitarbeiterin Ella";
-    }
-    else if(mitarbeiter_Bereich == "infraAnswers"){
-      mitarbeiter = "unser Mitarbeiter Robin";
-    }
-    
-    finalInputText.innerHTML= `Bleiben Sie bitte dran, ${mitarbeiter} wird Sie in kurze kontaktieren.`;
-    answer = `bitte warten Sie, ${mitarbeiter} ist in kurze da.`;
-
-    finalInputText.scrollIntoView(true);
-
-    UserInputText.placeholder = "Bitte schreiben Sie hier...";
-
-    $('#textInput').prop("disabled", false);
+    MitarbeiterName();
   }
 }
 
@@ -301,7 +285,9 @@ for (let i = 0; i < coll.length; i++) {
           <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="general"><span>Allgemein</span></button>
         </p>`;
 
-        $("#chatbox").append(MyResetButtons);
+        setTimeout(() => {
+          $("#chatbox").append(MyResetButtons);
+        }, 400);
         let TextIput = document.getElementById("textInput");
         TextIput.value = "";
         $('#textInput').prop("disabled", true);

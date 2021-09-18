@@ -79,7 +79,17 @@
   animation: test 1s linear;
 }
 
+.secondactiveBackground{
+  animation: test2 1s linear;
+}
+
 @keyframes test {
+  0% {background:none}
+  50%{background:var(--primary)}
+  100%{background: none;}
+}
+
+@keyframes test2 {
   0% {background:none}
   50%{background:var(--primary)}
   100%{background: none;}
