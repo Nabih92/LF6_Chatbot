@@ -12,10 +12,6 @@ for (let i = 0; i < coll.length; i++) {
             this.classList.remove("collapsible");
             let chatboxDisplay = document.getElementById("showChat");
             chatboxDisplay.classList.toggle("active");
-            // chatboxDisplay.style.transform = "scale3d(1, 1, 1) skew(11deg, 0deg) rotateY(75deg) translateX(369px) translateY(284px) scaleY(0.1) scaleX(0.4)";
-            // setTimeout(() => {
-            //     chatboxDisplay.style.transform = "scale3d(1, 1, 1) translateX(-7px) translateY(21px)";
-            // }, 200);
             chatboxDisplay.style.clipPath = "circle(100%)";
         }else{
             let removeHelpMessage = document.getElementById("HelpMessageRemove");
@@ -27,10 +23,6 @@ for (let i = 0; i < coll.length; i++) {
             this.classList.remove("collapsible2");
             let chatboxDisplay = document.getElementById("showChat");
             chatboxDisplay.classList.remove("active");
-            // chatboxDisplay.style.transform = "scale3d(1, 1, 1) skew(11deg, 0deg) rotateY(75deg) translateX(369px) translateY(284px) scaleY(0.1) scaleX(0.4)";
-            // setTimeout(() => {
-            //     chatboxDisplay.style.transform = "scale3d(1, 1, 1) skew(0deg, 0deg) rotateY(0deg) translateX(1000px) translateY(1000px) scaleY(0) scaleX(0)";
-            // }, 300);
             chatboxDisplay.style.clipPath = "circle(0% AT 175% 225%)";
         }
     });
