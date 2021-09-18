@@ -55,14 +55,16 @@ var windowsAntworte = `
 
 var macAntworte = `
 <p id="macAnswers" style="text-align: center;">
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac0"><span>Definitionen und Überblick</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac1"><span>Debian GNU/Linux bekommen und installieren</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac2"><span>Eine Debian-Distribution auswählen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac3"><span>IKompatibilitätsfragen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac4"><span>Für Debian-Systeme verfügbare Software</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac6"><span>hier kommt etwas rein</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac0"><span>Mein Gerät startet nicht mehr auf. Sind meine Daten verloren?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac1"><span>Soll ich dieses Update des Betriebssystems ausführen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac2"><span>Plötzlich ist eine Fehlermeldung auf dem Bildschirm erschienen mit dem Hinweis, mein Apple sei “nicht sicher” oder “von Viren infiziert”, und dass ich “hier klicken” soll um den Fehler zu beheben.</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac3"><span>Mein Apple Mac Computer spinnt und ist definitiv komplett mit Viren verseucht!</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac4"><span>Ich werde aufgefordert, mich mit meiner Apple ID (bzw. iCloud, iTunes oder App Store) anzumelden, kann mich aber nicht an das Passwort erinnern.</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac5"><span>Bisher wurden meine Kontakte und Kalender-Einträge automatisch auf allen meinen Apple Geräten synchronisiert. Seit heute funktioniert dies nicht mehr.</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac6"><span>Mein Computer meldet “Das Startvolume ist fast voll.”. Muss ich etwas unternehmen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac7"><span>Im Internet sehe ich oftmals Inserate für MacKeeper. Eine kostenlose Software, die meinen Apple Mac Computer schneller machen soll.</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac8"><span>Mein Apple Mac Computer meldet, dass seit x Tagen keine Time Maschine Datensicherung mehr erstellt werden konnte.</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac9"><span>Ich habe versehentlich ein paar sehr wichtige Dateien gelöscht. Sind diese wiederherstellbar?</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="mac11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
     document.getElementById("mac11").scrollIntoView(true);

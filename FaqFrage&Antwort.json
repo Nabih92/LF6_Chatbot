@@ -131,40 +131,44 @@
     ],
     "MacOS":[
         {
-            "Frage": "Frage1",
-            "Antwort": "Antwort1"
+            "Frage": "Mein Gerät startet nicht mehr auf. Sind meine Daten (Word und Excel Dokumente, Fotos, Videos, Kontakte, Kalender-Einträge etc.) verloren?",
+            "Antwort": "Mit größter Wahrscheinlichkeit sind Ihre Daten nicht verloren. Dennoch ist es ratsam, bereits bei der Anschaffung eines neuen Gerätes mit Apple’s Time Maschine - bzw. iCloud Backup - eine automatische Datensicherung zu erstellen."
         },
         {
-            "Frage": "Frage2",
-            "Antwort": "Antwort2"
+            "Frage": "Täglich erinnert mich mein Apple Gerät daran, dass ein neues Betriebssystem zur Installation bereitsteht. Soll ich dieses Update des Betriebssystems ausführen?",
+            "Antwort": "Aus Sicherheitsgründen sollten Sie sicherstellen, dass Ihre Geräte auf dem aktuellen Stand von macOS, iOS oder iPadOS sind. Wenn sich die Bezeichnung des OS um eine ganze Zahl erhöht, bspw. von iOS und iPadOS 13 auf 14, macht es Sinn, auf das darauffolgende Update, in diesem Falle bspw. Version 14.1, zu warten.<br><br>Für das Update auf macOS 11 Big Sur empfehlen wir, dass Sie dies von einer Fachperson vornehmen lassen. Bei einigen Benutzern sind während des Updates Probleme aufgetreten."
         },
         {
-            "Frage": "Frage3",
-            "Antwort": "Antwort3"
+            "Frage": "Plötzlich ist eine Fehlermeldung auf dem Bildschirm erschienen mit dem Hinweis, mein Apple sei “nicht sicher” oder “von Viren infiziert”, und dass ich “hier klicken” soll um den Fehler zu beheben.",
+            "Antwort": "Auf gar keinen Fall “hier klicken” auswählen. Bei dieser Meldung handelt es sich um einen Versuch, Sie dazu zu bringen, dass Sie eine schädliche Software auf Ihrem Computer installieren.<br><br>Wenn Sie aufgefordert werden, Ihr Benutzer-Passwort einzugeben: lassen Sie Ihre Vernunft walten. Bei einer allfälligen Unsicherheit lieber kurz bei uns anrufen und fragen. Wir beraten Sie gerne."
         },
         {
-            "Frage": "Frage4",
-            "Antwort": "Antwort4"
+            "Frage": "Mein Apple Mac Computer spinnt und ist definitiv komplett mit Viren verseucht!",
+            "Antwort": "Zu Ihrer Beruhigung: es gibt keine Viren für Apple’s macOS, die im Umlauf sind. Was Sie sich einfangen können ist ein sogenannter Trojaner. Allerdings müssen Sie Ihr Administrator-Passwort eingeben, damit sich dieser einnisten kann.<br><br>Geben Sie also niemals Ihr Administrator-Passwort ein, wenn Sie aus nicht nachvollziehbaren Gründen aufgefordert werden, dieses einzutippen."
         },
         {
-            "Frage": "Frage5",
-            "Antwort": "Antwort5"
+            "Frage": "Ich werde aufgefordert, mich mit meiner Apple ID (bzw. iCloud, iTunes oder App Store) anzumelden, kann mich aber nicht an das Passwort erinnern.",
+            "Antwort": "Ihr Passwort für alle Apple Dienste lässt sich in wenigen Schritten zurücksetzen.<br><br>Falls Sie keinen Zugriff mehr auf die bei Apple registrierte E-Mail-Adresse oder Handy-Nummer haben, wird die Angelegenheit ein wenig aufwändiger. Gerne unterstützen wir Sie dabei, den Zugriff auf Ihr Apple Konto wiederherzustellen."
         },
         {
-            "Frage": "Frage6",
-            "Antwort": "Antwort6"
+            "Frage": "Bisher wurden meine Kontakte und Kalender-Einträge automatisch auf allen meinen Apple Geräten synchronisiert. Seit heute funktioniert dies nicht mehr.",
+            "Antwort": "Hin und wieder erhalten wir Rückmeldungen, dass die Apple iCloud Synchronisation fehlerhaft ist.<br><br>Sollte sich das Problem nicht in wenigen Stunden von selber gelöst haben, empfiehlt es sich, dass wir Ihre Apple iCloud Konfiguration kurz überprüfen."
         },
         {
-            "Frage": "Frage7",
-            "Antwort": "Antwort7"
+            "Frage": "Mein Computer meldet “Das Startvolume ist fast voll.”. Muss ich etwas unternehmen?",
+            "Antwort": "Arbeiten Sie auf keinen Fall weiter. Sie müssen entweder Daten löschen, oder diese auf ein externes Speichermedium auslagern. Falls Sie nicht sicher sind, wie Sie das bewerkstelligen können: rufen Sie an. Wir helfen Ihnen."
         },
         {
-            "Frage": "Frage8",
-            "Antwort": "Antwort8"
+            "Frage": "Im Internet sehe ich oftmals Inserate für MacKeeper. Eine kostenlose Software, die meinen Apple Mac Computer schneller machen soll.",
+            "Antwort": "MacKeeper sollten sie unter keinen Umständen installieren. Die Inserate sind zwar verführerisch clever geschrieben, allerdings trifft keine der darin aufgeführten Vorteile zu.<br><br>Im schlimmsten Fall können Sie MacKeeper versehentlich so konfigurieren, dass alle Daten auf Ihrem Mac Computer für immer verschwunden sind."
         },
         {
-            "Frage": "Frage9",
-            "Antwort": "Antwort9"
+            "Frage": "Mein Apple Mac Computer meldet, dass seit x Tagen keine Time Maschine Datensicherung mehr erstellt werden konnte.",
+            "Antwort": "Sobald Sie diese Meldung sehen sollten Sie die Ursache beheben. Sie können Time Maschine neu konfigurieren. Oder eine andere Harddisk als Backup-Disk auswählen.<br><br>Da regelmäßige, automatisierte Datensicherungen sehr wichtig sind, können wir Ihre Backup-Strategie gerne überprüfen und bei Bedarf optimieren."
+        },
+        {
+            "Frage": "Ich habe versehentlich ein paar sehr wichtige Dateien gelöscht. Sind diese wiederherstellbar?",
+            "Antwort": "Ganz wichtig: hören Sie umgehend auf, an Ihrem Gerät zu arbeiten. Dadurch erhöht sich die Chance, dass wir von Apple-Hilfe die gelöschten Dateien wiederherstellen können.<br><br>Falls Sie eine Time Maschine Datensicherung im Einsatz haben, stehen Ihnen Ihre Dateien in wenigen Schritten wieder zur Verfügung."
         }
     ],
     "InfrastrukturNetzwerke":[
