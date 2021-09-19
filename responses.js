@@ -208,7 +208,7 @@ function MitarbeiterName(){
   var finalInputText = document.getElementById("lastAnswerText");
   
   if(mitarbeiter_Bereich == "generalAnswers"){
-    mitarbeiter = "Unsere Spezialistin Tina";
+    mitarbeiter = "Unsere Mitarbeitin Tina";
     Bereich = "\"Allgemein\"";
   }
   else if(mitarbeiter_Bereich == "linuxAnswers"){
