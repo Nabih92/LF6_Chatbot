@@ -173,40 +173,44 @@
     ],
     "InfrastrukturNetzwerke":[
         {
-            "Frage": "Frage1",
-            "Antwort": "Antwort1"
+            "Frage": "FCS oder File Check Sequence Errors",
+            "Antwort": "Diese Art an Fehlern findet man häufig in Netzwerken. Jedes übertragene und empfangene Paket enthält eine sogenannte File Check Sequence. Damit kann das empfangende Gerät feststellen, ob das Paket komplett ist und muss nicht jedes Bit unter die Lupe nehmen. Es handelt sich hier um eine Art CRC (Cyclical Redundancy Check).<br><br>Neben dem Herunterfahren und Hochfahren eines Computers während einer Übertragung ist die häufigste Ursache für diese Fehler einfach Rauschen. Netzwerkrauschen wird mitunter verursacht, wenn die Kabel zu nahe an Quellen liegen, die Rauschen verursachen."
         },
         {
-            "Frage": "Frage2",
-            "Antwort": "Antwort2"
+            "Frage": "Ausrichtungsfehler (Alignment Errors)",
+            "Antwort": "Alignment Errors treten auf, wenn ein Frame eine ungerade Zahl an Bytes aufweist, die nicht durch acht teilbar ist, plus ein möglicher FCS-Fehler. Genau wie oben beschrieben können Verkabelungsprobleme verantwortlich sein. Auch Probleme bei der Paketformatierung auf MAC-Ebene, die häufig mit Hardware zusammenhängen, verursachen solche Probleme. Ein fehlerhafter LAN-Treiber ist ebenso denkbar. Ersetzt man den Treiber, löst sich das Problem oftmals. Diese Fehler lassen sich auch in eine Beziehung zu RUNT-Paketen stellen oder zu Paketen, die zu kurz sind. Rauschen ist allerdings die häufigste Ursache. Das lässt sich in der Regel beheben, wenn man den Verkabelungskanal adressiert."
         },
         {
-            "Frage": "Frage3",
-            "Antwort": "Antwort3"
+            "Frage": "CRC-Fehler",
+            "Antwort": "Hierbei handelt es sich um eine Kombination aus Ausrichtungs- und Checksummenfehlern. Eine Analyse anderer existierender Zustände hilft bei der Ursachenfindung. Ein CRC-Fehler tritt auf, wenn der so genannte Cyclical Redundancy Check (zyklische Redundanzprüfung) fehlschlägt.<br><br>Ein Grund kann eine defekte Netzwerkkarte (NIC, Network Interface Card) sein. Allgemein gesagt kann eine Maschine die Verbindung nicht aufrechterhalten. Die Fehler treten gleichmäßig auf und lassen sich oftmals auf einen einzelnen Rechner reduzieren.<br><br>In diesem Fall prüfen Sie am besten die Netzwerkkarte und tauschen sie im Notfall aus. Treten die Netzwerkfehler mit Unterbrechungen und nur gelegentlich auf, ist der Auslöser der Probleme wahrscheinlich nicht die Netzwerkkarte. Machen CRC-Fehler mehr als ein Prozent der Netzwerknutzung aus, dann lohnt sich eine Reparatur."
         },
         {
-            "Frage": "Frage4",
-            "Antwort": "Antwort4"
+            "Frage": "Kollisionen und verspätete Kollisionen ",
+            "Antwort": "Es handelt sich hier um zwei separate Anomalien mit ähnlichen Lösungsansätzen. Kollisionen treten dann auf, wenn ein oder mehrere Geräte das Netzwerk gleichzeitig verwenden wollen. In einem Full-Duplex-Netzwerk wie Ethernet ist das kein Problem, weil der Fehler dort nicht auftritt. Früher liefen viele Netzwerke mit Half-Duplex und es kam zu Kollisionen. Diese veraltete Technologie sollte heutzutage kein Problem mehr darstellen. Auf Kollisionen reagierte man am besten mit einem Upgrade auf ein Full-Duplex-Netzwerk."
         },
         {
-            "Frage": "Frage5",
-            "Antwort": "Antwort5"
+            "Frage": "Ausschuss (Discards)",
+            "Antwort": "So genannte Discards kommen ebenfalls häufig vor und sind eine Funktionalität von Netzwerkgeräten. Discards können dann auftreten, wenn ein Puffer zu voll ist und das Netzwerk des Paketes vom Gerät nicht aufnehmen (Übertragungs-Discards) kann. Möglicherweise verhindert auch ein Stau im Netzwerk, dass ein Paket nicht auf einen höher gelegenen Layer transportiert werden kann (Empfangs-Discards). Durch häufige erneute Übertragungen können sich Discards wegen zusätzlicher Traffic-Loads erhöhen."
         },
         {
-            "Frage": "Frage6",
-            "Antwort": "Antwort6"
+            "Frage": "Unbekanntes Protokoll ",
+            "Antwort": "Fehler in diesem Bereich treten in der Regel auf, wenn das Netzwerk den IP-Protokoll-Port nicht anerkennt. Normalerweise ist eine Anomalie der Auslöser, wenn der Port zum Beispiel über 1024 liegt. Diese Fehler lassen sich auf verschiedene Weisen korrigieren und Sie müssen sich dabei normalerweise auf den Switch- oder Router-Hersteller verlassen, damit dieser eine Lösung zur Verfügung stellt.<br>Es könnte auch sein, dass eine Netzwerkkarte oder ein Port dynamisch einen IP-Port zuweist, der nicht anerkannt wird. Die Lösung ist an dieser Stelle allerdings gleich. Sieht man von defekten Paketen ab, die man als Pakete mit anderen Fehlern identifiziert, ist die Ursache normalerweise in den aktiven Komponenten zu suchen. Allerdings sollten Sie andere Fehler erst ausschließen und dann Änderungen bei Ihrer aktiven Hardware durchführen. Sie sollten im Hinterkopf behalten, dass jeder Switch- und Router-Hersteller sowohl Managed als auch Unmanaged Switches im Portfolio hat. Setzen Sie einen Managed Switch ein oder SNMP ist deaktiviert, werden Sie die Fehler ohne einen Paket-Sniffer nicht sehen. Sniffer dekodieren Pakete und können unter Umständen auch Passwörter entschlüsseln. <br>Der Trend ist, ein Netzwerk-Management-Tool zu bemühen. Wenn Ihnen die Analyse der Fehler nicht behagt, dann stehen Ihnen diverse Optionen zur Verfügung. Eine Möglichkeit ist, einen zertifizierten Infrastruktur-Auditor um Hilfe zu bitten. Jeder Audit sollte eine Kombination aus physischer und elektronischer Schicht sein."
         },
         {
-            "Frage": "Frage7",
-            "Antwort": "Antwort7"
+            "Frage": "Bildschirm bleibt schwarz",
+            "Antwort": "We'll look at some things that can cause a black or blank screen: <br>Connection problems with your monitor or screen<br>Display adapter driver update issues<br> Issues with recent system updates or installations<br><br>Let's go through some troubleshooting steps and check your hardware and software. The steps on this page might look complicated at first, but follow them in order, step by step, and we’ll try to get you back on track. You'll use safe mode for many of the steps because that will start Windows with a limited set of files and drivers to help you narrow down the problems. You can learn more about safe mode, or keep reading and we'll provide details when you need them. "
         },
         {
-            "Frage": "Frage8",
-            "Antwort": "Antwort8"
+            "Frage": "PC verwendet kein wlan ",
+            "Antwort": "Trennt zunächst den Router für 10 Sekunden vom Stromnetz und schließt ihn wieder an. Startet PC und/oder Handy neu. Oft behebt das die meisten WLAN und Internetprobleme.<br><br>Versucht mit einem anderen Gerät über euer WLAN auf das Internet zuzugreifen. Falls das funktioniert, liegt der Fehler an einer WLAN-Einstellung auf den betroffenen Geräten.<br><br>Falls ihr am PC eine LAN-Verbindung nutzt: Schaut zunächst, ob es richtig am PC und Router angeschlossen ist. Prüft das Kabel außerdem auf Brüche und Schäden. Probiert ein anderes Kabel aus, um es als Fehlerquelle auszuschließen.<br><br>Wenn ihr am PC keine LAN-Verbindung nutzt: Steckt ein LAN-Kabel an euren Rechner und den Router und schaut, ob das Internet dann funktioniert. Falls nicht, habt ihr vermutlich die falschen Anmeldeinformationen im Router eingegeben. Falls das Internet nun funktioniert, scheint es ein Fehler mit dem WLAN-Netz zu geben. Lest dann diese Anleitung weiter."
         },
         {
-            "Frage": "Frage9",
-            "Antwort": "Antwort9"
+            "Frage": "WLAN Box Kontrolllampe blinkt",
+            "Antwort": "Bei manchen WLAN-Routern deutet eine blinkende Kontrolllampe auf eine Störung hin, bei anderen leuchtet die Lampe rot statt grün, wenn etwas nicht stimmt. Prüfen Sie kurz, ob alle Kabel richtig angeschlossen sind. Dann sollten Sie zur Bedienungsanleitung greifen. Dort wird in der Regel sehr gut erklärt, welche Bedeutung welche Lampe hat und was zu tun ist, wenn diese eine Störung anzeigt. Blinken die Lampen am WLAN-Router unregelmäßig in einer Art Morsecode? Das sind konkrete Statusmeldungen und die Bedeutung dieser Blinksignale finden Sie ebenfalls in der Bedienungsanleitung. Bei manchen WLAN-Routern sind die Kontrolllampen auch direkt beschriftet. Blinkt bei einer Fritzbox beispielsweise die DSL-Lampe, dann bedeutet das nur, das Daten übertragen werden. Es ist also alles in Ordnung. Leuchtet die Lampe aber rot, weist das auf eine Störung der DSL-Verbindung hin."
+        },
+        {
+            "Frage": "Wie finde ich meine IP Addresse",
+            "Antwort": "1. Drücken Sie zunächst gleichzeitig [Win] + [R], um das \"Ausführen\" Fenster zu öffnen.<br>2. Geben Sie hier \"cmd\" ein und bestätigen Sie mit \"OK\".<br>3. Es öffnet die Kommandozentrale (CMD). Geben Sie nun \"ipconfig\" in CMD ein.<br>4. Ihre IP finden Sie beim Eintrag \"IPv4-Adresse\"."
         }
     ]
 }

@@ -73,14 +73,16 @@ var macAntworte = `
 
 var infraAntworte = `
 <p id="infraAnswers" style="text-align: center;">
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra0"><span>Definitionen und Überblick</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra1"><span>Debian GNU/Linux bekommen und installieren</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra2"><span>Eine Debian-Distribution auswählen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra3"><span>IKompatibilitätsfragen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra4"><span>Für Debian-Systeme verfügbare Software</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra6"><span>hier kommt etwas rein</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra0"><span>FCS oder File Check Sequence Errors</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra1"><span>Ausrichtungsfehler (Alignment Errors)</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra2"><span>CRC-Fehler</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra3"><span>Kollisionen und verspätete Kollisionen </span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra4"><span>Ausschuss (Discards)</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra5"><span>Unbekanntes Protokoll </span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra6"><span>Bildschirm bleibt schwarz</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra7"><span>PC verwendet kein wlan</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra8"><span>WLAN Box Kontrolllampe blinkt</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra9"><span>Wie finde ich meine IP Addresse</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="infra11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
     document.getElementById("infra11").scrollIntoView(true);
