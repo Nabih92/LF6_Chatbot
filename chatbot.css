@@ -182,7 +182,7 @@
    background-color: var(--primary);
    border-radius: 15px;
    position: absolute;
-   width: 176px;
+   width: 280%;
    right: 47px;
    bottom: 70px;
    background-image: linear-gradient(to bottom right, #ffffff75 , #00000037);
