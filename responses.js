@@ -264,7 +264,7 @@ function lastAnswer(id, parentId){
 }
 
 function getBotResponse(input){
-  if(input !== "" && answer == "Danke für das Feedback"){
+  if(input !== "" && answer == "Wir bedanken uns für Ihr Feedback"){
     $('#textInput').prop("disabled", true);
     var UserInputText = document.getElementById("textInput");
     UserInputText.placeholder = "Auf Wiedersehen!";
