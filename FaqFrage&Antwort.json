@@ -1,40 +1,36 @@
 {
     "Allgemein":[
         {
-            "Frage": "Frage1",
-            "Antwort": "Antwort1"
+            "Frage": "Wie lange dauert die Bearbeitung von E-Mails?",
+            "Antwort": "In der Regel werden E-Mails, die uns an Werktagen erreichen, innerhalb von 24 Stunden bearbeitet."
         },
         {
-            "Frage": "Frage2",
-            "Antwort": "Antwort2"
+            "Frage": "Ich habe bei der Fülle von Auswahlmöglichkeiten Schwierigkeiten mich zu entscheiden, können Sie mir behilflich sein?",
+            "Antwort": "Unsere Telefon-Hotline steht Ihnen unter +49 40  123 456 789 (Mo-Fr 8-19 Uhr, Sa-So 9-15 Uhr) gerne für eine Beratung zur Verfügung."
         },
         {
-            "Frage": "Frage3",
-            "Antwort": "Antwort3"
+            "Frage": "Ist Ihre Telefonnummer eine „getarnte” teure Service-Nr.?",
+            "Antwort": "Nein, unsere Telefonnummer ist eine normale Festnetz-Nummer. Bei einem Anruf entstehen die Kosten, die Ihr Telefon-Anbieter für Anrufe in das deutsche Festnetz veranschlagt. Haben Sie eine Flatrate auf Anrufe in das deutsche Festnetz, entstehen Ihnen keine zusätzlichen Kosten."
         },
         {
-            "Frage": "Frage4",
-            "Antwort": "Antwort4"
+            "Frage": "Ich kann mein PC-Problem nicht am Telefon beschreiben bzw. ich würde gerne Bildmaterial o.ä. zur Veranschaulichung anfügen. Kann ich Sie schriftlich, vorzugsweise per E-Mail, erreichen?",
+            "Antwort": "Ja, gerne können Sie unsere Kundenbetreuung auch per E-Mail kontaktieren. Schreiben Sie bitte an die folgende E-Mail Adresse: beratung@geekdude.me."
         },
         {
-            "Frage": "Frage5",
-            "Antwort": "Antwort5"
+            "Frage": "Wie lange muss ich auf meinen PC nach der Wartung warten?",
+            "Antwort": "Unsere Computer sind in der Regel 3-5 Werktage nach Zahlungseingang versandfertig, sofern die entsprechenden Angebote mit dem Status „lieferbar” gekennzeichnet sind. Im Einzelfall kann es jedoch durch nicht vorhersehbare Lieferengpässe trotzdem zu längeren Lieferzeiten kommen."
         },
         {
-            "Frage": "Frage6",
-            "Antwort": "Antwort6"
+            "Frage": "Wie kann ich bei Ihnen bezahlen?",
+            "Antwort": "Einen Überblick über die von uns akzeptierten Zahlungsarten finden Sie hier: Zahlungsarten."
         },
         {
-            "Frage": "Frage7",
-            "Antwort": "Antwort7"
+            "Frage": "Wie lange dauert es, bis eine Bezahlung per Banküberweisung bei Ihnen gebucht ist?",
+            "Antwort": "Je nachdem welche Banken beteiligt sind, kann dies 2-3 Werktage dauern."
         },
         {
-            "Frage": "Frage8",
-            "Antwort": "Antwort8"
-        },
-        {
-            "Frage": "Frage9",
-            "Antwort": "Antwort9"
+            "Frage": "Wie halten Sie es mit dem Datenschutz?",
+            "Antwort": "Wir nehmen den Schutz personenbezogener Daten sehr ernst. Der Schutz Ihrer Privatsphäre ist für uns von höchster Bedeutung, weshalb die Einhaltung der Bestimmungen des Bundesdatenschutzgesetzes für uns eine Selbstverstänulichkeit ist."
         }
     ],
     "LinuxOS":[

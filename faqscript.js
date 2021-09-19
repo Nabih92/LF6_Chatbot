@@ -44,8 +44,8 @@ fetch("FaqFrage&Antwort.json")
   for (let i = 0; i < data.InfrastrukturNetzwerke.length; i++) {
     let NetzwerkeFAQ = `
     <div class="accordion-item">
-      <div class="accordion-item-header" id="InfraQ${i}">${data.InfrastrukturNetzwerke[i].Frage}</div>
-      <div class="accordion-item-body" id="InfraA${i}">
+      <div class="accordion-item-header" id="infraQ${i}">${data.InfrastrukturNetzwerke[i].Frage}</div>
+      <div class="accordion-item-body" id="infraA${i}">
         <div class="accordion-item-body-content">${data.InfrastrukturNetzwerke[i].Antwort}</div>
       </div>
     </div>`;

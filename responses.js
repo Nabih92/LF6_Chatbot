@@ -1,13 +1,13 @@
 var allgemeinAntworte = `
 <p id="generalAnswers" style="text-align: center;">
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general0"><span>Definitionen und Überblick</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general1"><span>Debian GNU/Linux bekommen und installieren</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general2"><span>Eine Debian-Distribution auswählen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general3"><span>IKompatibilitätsfragen</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general4"><span>Für Debian-Systeme verfügbare Software</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general5"><span>Grundlagen des Debian-Paketverwaltungssystems</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general6"><span>hier kommt etwas rein</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general7"><span>Anpassen Ihres Debian GNU/Linux-Systems</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general0"><span>Wie lange dauert die Bearbeitung von E-Mails?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general1"><span>Ich habe bei der Fülle von Auswahlmöglichkeiten Schwierigkeiten mich zu entscheiden, können Sie mir behilflich sein?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general2"><span>Ist Ihre Telefonnummer eine „getarnte” teure Service-Nr.?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general3"><span>Ich kann mein PC-Problem nicht am Telefon beschreiben bzw. ich würde gerne Bildmaterial o.ä. zur Veranschaulichung anfügen. Kann ich Sie schriftlich, vorzugsweise per E-Mail, erreichen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general4"><span>Wie lange muss ich auf meinen PC nach der Wartung warten?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general5"><span>Wie kann ich bei Ihnen bezahlen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general6"><span>Wie lange dauert es, bis eine Bezahlung per Banküberweisung bei Ihnen gebucht ist?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general7"><span>Wie halten Sie es mit dem Datenschutz?</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="general11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
     document.getElementById("general11").scrollIntoView(true);
@@ -174,7 +174,7 @@ function showFeedbackOnFAQ(id, parentId) {
   
   for (let i = 0; i <= 11; i++) {
     // Allgemein
-    let test = ["general", "linux", "windows", "mac", "Infra"];
+    let test = ["general", "linux", "windows", "mac", "infra"];
     for(let I = 0; I < test.length; I++){
       if(id === test[I] + i){
         let Frage = document.getElementById(`${test[I]}Q` + i);
@@ -306,9 +306,9 @@ for (let i = 0; i < coll.length; i++) {
       <button onclick="showLevel1Answers(this.id, this.parentNode.id)" class="Antwort1" id="general"><span>Allgemein</span></button>
     </p>`;
 
-    setTimeout(() => {
+    
       $("#chatbox").append(MyResetButtons);
-    }, 400);
+    
     let TextIput = document.getElementById("textInput");
     TextIput.value = "";
     $('#textInput').prop("disabled", true);
