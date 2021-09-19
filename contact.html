@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       $(document).ready(function () {
         $(".hamburger").click(function () {
@@ -24,9 +25,11 @@
   <body>
     <div class="container">
       <div class="chatbox">
-        <div class="chatbox__button">
-          <button id="chat-button" type="button" class="collapsible"><img src="./chatboticon.png" style="width: 45px;height: 40px;"></button>
-        </div>
+        <a href="index.html">
+          <div class="chatbox__button">
+            <button id="chat-button" type="button" class="collapsible"><img src="./chatboticon.png" style="width: 45px;height: 40px;"></button>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -154,92 +157,92 @@
         <div class="wrapper2">
             <div class="title">Kontakt</div>
             <div class="form">
-              <form class="FORM">
+              <form class="FORM" onsubmit="test()">
                 <h3>1. Ihre Informationen</h3><br>
                 <div class="inputfield">
                     <label>Titel</label>
                     <div class="custom_select">
-                        <select name="titel">
+                        <select name="titel" required>
                             <option value="" disabled hidden selected>Bitte Auswählen</option>
                             <option value="kein">Kein</option>
-                            <option value="doctor">Dr.</option>
-                            <option value="professor">Professor.</option>
-                            <option value="delp">Depl.</option>
-                            <option value="eng">Eng.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Professor">Professor.</option>
+                            <option value="Depl.">Depl.</option>
+                            <option value="Eng.">Eng.</option>
                         </select>
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Anrede<a style="color: red;font-size: 18px;">*</a></label>
                     <div class="custom_select">
-                        <select name="anrede">
+                        <select name="anrede" required>
                             <option value="" disabled hidden selected>Bitte Auswählen</option>
-                            <option value="male">Herr</option>
-                            <option value="female">Frau</option>
+                            <option value="Herr">Herr</option>
+                            <option value="Frau">Frau</option>
                         </select>
                     </div>
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>Vorname<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" name="vorname" required>
+                        <input type="text" class="input" value="" name="vorname" required>
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Nachname<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" name="nachname" required>
+                        <input type="text" class="input" value="" name="nachname" required>
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Firma</label>
-                    <input type="text" class="input" name="firma">
+                    <input type="text" value="" class="input" name="firma">
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>Straße<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required name="straße">
+                        <input type="text" value="" class="input" name="straße" required>
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Hausnr.<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required name="hausnr">
+                        <input type="text" value="" class="input" name="hausnr" required>
                     </div>
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>PLZ<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required name="plz">
+                        <input type="text" value="" class="input" name="plz" required>
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Ort<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required name="ort">
+                        <input type="text" value="" class="input" name="ort" required>
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Geschlecht<a style="color: red;font-size: 18px;">*</a></label>
                     <div class="custom_select">
-                        <select required name="gender">
+                        <select name="gender" required>
                             <option value="" disabled hidden selected>Bitte auswählen</option>
-                            <option value="male">Männlich</option>
-                            <option value="female">Weiblich</option>
-                            <option value="female">Divers</option>
+                            <option value="Männlich">Männlich</option>
+                            <option value="Weiblich">Weiblich</option>
+                            <option value="Divers">Divers</option>
                         </select>
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Geburtsdatum<a style="color: red;font-size: 18px;">*</a></label>
-                    <input type="date" class="input" required name="birthday">
+                    <input type="text" value="dd.mm.yyyy" class="input" name="birthday" required>
                 </div>
                 <div class="inputfield">
                     <label>Telefon<a style="color: red;font-size: 18px;">*</a></label>
-                    <input type="text" class="input" required name="telefon">
+                    <input type="text" value="" class="input" name="telefon" required>
                 </div>
                 <div id="InputFieldTwoCol">
                     <div class="inputfield">
                         <label>Email Adresse<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input email" required name="email">
+                        <input type="text" value="" class="input email" name="email" required>
                     </div>
                     <div class="inputfield" id="col2">
                         <label>Email Adresse Bestätigen<a style="color: red;font-size: 18px;">*</a></label>
-                        <input type="text" class="input" required>
+                        <input type="text" value="" class="input" required>
                     </div>
                 </div>
                 <br><br>
@@ -247,7 +250,7 @@
                   <label>Nachricht / Problembeschreibung<a style="color: red;font-size: 18px;">*</a></label>
                 </div>
                 <div class="inputfield" id="col1">
-                  <textarea class="input message" rows="4" cols="50" name="problembeschreibung" required placeholder="Bitte hier schreiben"></textarea>
+                  <textarea class="input message" rows="4" cols="50" name="problembeschreibung" placeholder="Bitte hier schreiben" required></textarea>
                 </div>
                 <br>
                 <p><a style="color: red;font-size: 18px;">*</a>Pflichtfeld</p><br>

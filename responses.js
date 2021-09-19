@@ -36,17 +36,17 @@ var linuxAntworte = `
 
 var windowsAntworte = `
 <p id="windowsAnswers" style="text-align: center;">
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows0"><span>Was kostet Windows 10?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows1"><span>Wie schaut es mit einem Windows 10-Key und der Aktivierung aus?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows2"><span>Welche Windows 10-Versionen (SKUs) gibt es?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows3"><span>Welche Upgrade-Pfade sind möglich?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows4"><span>Wann erscheint Windows 11?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows5"><span>Kostenloses Upgrade erst 2022?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows6"><span>Kann ich Windows 11 bereits testen?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows7"><span>Wird es ein kostenloses Upgrade auf Windows 11 geben?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows8"><span>Wird es eine Upgrade von Windows 7 oder 8 auf Windows 11 geben?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows0"><span>Was ist der Unterschied zwischen den 32-Bit- und 64-Bit-Versionen von Windows?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows1"><span>Ich habe meine Kopie von Windows über eine Universität erworben. Kann ich diese hier herunterladen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows2"><span>Mein Windows 7-Product Key wird nicht bestätigt. Woran liegt das?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows3"><span>Ich kann die gewünschte Windows 8.1- oder Windows 10-Edition nicht finden. Wo kann ich noch suchen?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows4"><span>Ist das Medium startbar?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows5"><span>Windows war auf meinem Gerät vorinstalliert. Kann ich die Medien von dieser Website herunterladen und installieren?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows6"><span>Ich kenne das Risiko. Werden die Medien von dieser Website ordnungsgemäß auf Geräten mit vorinstalliertem Betriebssystem installiert?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows7"><span>Ich habe ein Gerät ohne Windows (z. B. von Apple), auf dem ich Windows ausführen möchte. Wo erhalte ich die Medien?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows8"><span>Ich habe Windows 7 über eine Website erworben. Der Händler hat mir mitgeteilt, dass ich über einen „System-Builder“-Product Key verfüge. Wieso ist dieser nicht zulässig?</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows9"><span>Kann ich ein Upgrade auf Windows 11 rückgängig machen?</span></button>
-  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows10"><span>Wie viel wird Windows 11 kosten?</span></button>
+  <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows10"><span>Wie stelle ich fest, ob auf meinem Computer eine 64-Bit-Version von Windows ausgeführt werden kann?</span></button>
   <button onclick="showFeedbackOnFAQ(this.id, this.parentNode.id)" class="Antwort1" id="windows11"><span>Alle Aussagen treffen nicht zu!</span></button>
   <script>
     document.getElementById("windows11").scrollIntoView(true);

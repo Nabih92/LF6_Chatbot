@@ -85,48 +85,48 @@
     ],
     "WindowsOS":[
         {
-            "Frage": "Was kostet Windows 10?",
-            "Antwort": "Windows 10 wird wieder in verschiedenen Varianten auf den Markt kommen. Neben den Home- und Professional-Versionen gibt es auch die zur Vorinstallation auf Fertig-PCs verwendete Core-Version, die der Home-Variante entspricht. Hinzu kommt die Enterprise-Ausgabe, die ausschließlich als Volumenlizenz vertrieben wird. Bei Windows 10 Enterprise liegen noch keine Angaben vor, zu den Endkunden-Versionen sind die Preise aber schon jetzt bekannt. <br><br> Windows 10 Home wird in Deutschland mit einer offiziellen Preisempfehlung von 119 Euro angeboten, während Windows 10 Professional 199 Euro kostet. Diese Angaben gelten allerdings nur als Richtwert und dürften recht bald unterschritten werden - außerdem gelten sie nur für die normale \"Boxed\" Verkaufsversionen, also die Ausgabe mit kompletter Verpackung, einigen enthaltenen Support-Dienstleistungen und beigelegten DVD-Installationsmedien."
+            "Frage": "Was ist der Unterschied zwischen den 32-Bit- und 64-Bit-Versionen von Windows?",
+            "Antwort": "Die Begriffe 32-Bit und 64-Bit beziehen Sie auf die Informationsverarbeitung durch den Prozessor (CPU) des Computers. Die 64-Bit-Version von Windows kann große Mengen RAM-Speicher (Random Access Memory) effizienter einsetzen als ein 32-Bit-System. Nicht alle Geräte können die 64-Bit-Versionen von Windows ausführen."
         },
         {
-            "Frage": "Wie schaut es mit einem Windows 10-Key und der Aktivierung aus?",
-            "Antwort": "Benutzer bekommen beim Windows 10-Upgrade keinen Produktkey. Eine Neuinstallation nach dem Upgrade ist möglich, ohne dass man einen Key eingeben muss. Die automatische Aktivierung des frisch upgegradeten Windows 10 muss über Internet laufen. Es gibt zur Zeit keinen Weg, dies anderweitig zu machen. Bei signifikanten Hardwareänderungen wird eine Aktivierung per Telefon notwendig."
+            "Frage": "Ich habe meine Kopie von Windows über eine Universität erworben. Kann ich diese hier herunterladen?",
+            "Antwort": "Ja. Sie benötigen jedoch den Product Key. Rufen Sie die Produkte für Forschung und Lehre-Downloadseite auf, und wählen Sie zunächst Ihre Version von Windows aus."
         },
         {
-            "Frage": "Welche Windows 10-Versionen (SKUs) gibt es?",
-            "Antwort": "Microsoft hat die Details im Blog-Beitrag Introducing Windows 10 Editions veröffentlicht"
+            "Frage": "Mein Windows 7-Product Key wird nicht bestätigt. Woran liegt das?",
+            "Antwort": "Das häufigste Problem ist die Verwendung eines Product Keys für ein Produkt, das von der Website derzeit nicht unterstützt wird, z. B. ein Upgrade-Schlüssel, ein MSDN-Schlüssel, Product Keys für vorinstallierte Medien oder ein Enterprise Edition-Schlüssel. Zugriff auf MSDN-Produkte oder die Enterprise Edition erhalten Sie im MSDN-Portal oder im Volume Licensing Service Center. Upgrades und vorinstallierte Medien werden von den Tools auf der Website derzeit nicht unterstützt."
         },
         {
-            "Frage": "Welche Upgrade-Pfade sind möglich?",
-            "Antwort": "Die Upgrade-Pfade von Windows 7 (Home, Professional, Ultimate) und Windows 8.1 (Core, Pro) auf Windows 10 sind in diesem Blog-Beitrag veröffentlicht worden."
+            "Frage": "Ich kann die gewünschte Windows 8.1- oder Windows 10-Edition nicht finden. Wo kann ich noch suchen?",
+            "Antwort": "MSDN-Produkte oder Enterprise-Editionen finden Sie im MSDN-Portal oder im Volume Licensing Service Center."
         },
         {
-            "Frage": "Wann erscheint Windows 11?",
-            "Antwort": "Windows 11 wird laut Microsoft am 5. Oktober erscheinen, zunächst aber nur für neue PCs. Ein Update für ältere Geräte soll später folgen. Hier müsst ihr euch noch bis ins neue Jahr gedulden."
+            "Frage": "Ist das Medium startbar?",
+            "Antwort": "Mit den Medien von dieser Website können Sie startbare USB-Laufwerke und DVDs erstellen, mit denen Sie auf die Wiederherstellungstools zugreifen können."
         },
         {
-            "Frage": "Kostenloses Upgrade erst 2022?",
-            "Antwort": "Auf Twitter hat der offizielle Windows-Account preisgegeben, dass das Upgrade von bestehenden Windows 10-Installationen im ersten Halbjahr 2022 ausgerollt wird. Der Rollout soll in Phasen erfolgen, nicht alle PCs sollten daher direkt das Update erhalten."
+            "Frage": "Windows war auf meinem Gerät vorinstalliert. Kann ich die Medien von dieser Website herunterladen und installieren?",
+            "Antwort": "Wenden Sie sich bezüglich gerätespezifischer Treiber und Anwendungen an den Hersteller bzw. Händler, bevor Sie auf dieser Website erworbene Software auf Geräten mit vorinstallierten Betriebssystemen installieren, erneut installieren oder wiederherstellen. Bei der Installation von Betriebssystemen von dieser Website verfällt unter Umständen der Supportvertrag mit dem Hersteller bzw. Händler. Sämtliche Treiber oder Programme, die vom Gerätehersteller oder Händler installiert wurden, können während der Installation entfernt werden."
         },
         {
-            "Frage": "Kann ich Windows 11 bereits testen?",
-            "Antwort": "Teilnehmer an Microsofts Insider-Programm können bereits jetzt das neue Betriebssystem testen. Hier werden in regelmäßigen Abständen neue Builds des kommenden Betriebssystems veröffentlicht, die jedoch noch nicht zu 100 Prozent marktreif sind. Die Entwickler nutzen die Plattform, um neue Funktionen unter realistischen Bedingungen zu testen und flexibel auf Fehler zu reagieren."
+            "Frage": "Ich kenne das Risiko. Werden die Medien von dieser Website ordnungsgemäß auf Geräten mit vorinstalliertem Betriebssystem installiert?",
+            "Antwort": "Windows 8.x oder Windows 10 vorinstalliert: Sie können Medien von dieser Website herunterladen und auf Ihrem Gerät installieren. In den meisten Fällen werden Sie während der Installation nicht aufgefordert, einen Product Key anzugeben, da dieser auf der Hauptplatine gespeichert ist. Jedoch gehen bei der Installation vom Hersteller installierte gerätespezifische Treiber und entsprechende Software verloren. *Wenn Sie während der Installation zur Eingabe eines Product Key aufgefordert werden, finden Sie in der Antwort auf die vorhergehende Frage „Wo finde ich meinen Windows-Product Key?“ weitere Informationen."
         },
         {
-            "Frage": "Wird es ein kostenloses Upgrade auf Windows 11 geben?",
-            "Antwort": "Windows 11 wird als kostenloses Update für kompatible Windows 10-Rechner angeboten werden. Das wurde bereits mehrfach bestätigt. Allerdings kann es sein, das nicht alle Windows 10-PCs mit der Hardware ausgestattet sind, die das neue OS erfordert."
+            "Frage": "Ich habe ein Gerät ohne Windows (z. B. von Apple), auf dem ich Windows ausführen möchte. Wo erhalte ich die Medien?",
+            "Antwort": "Sie können eine ISO-Datei mit Windows herunterladen und auf diesem Gerät verwenden. Unter den folgenden Links finden Sie die optimalen ISO-Downloads für Geräte ohne Windows: Windows 10, Windows 8.1 oder Windows 7."
         },
         {
-            "Frage": "Wird es eine Upgrade von Windows 7 oder 8 auf Windows 11 geben?",
-            "Antwort": "Im Vorfeld gab es Gerüchte, dass Nutzer von Windows 7 und 8 auf das neue Windows 11 kostenlos upgraden können. Das wurde bislang noch nicht von Microsoft bestätigt. Ein Weg dazu könnte ein verspätetes Update auf Windows 10 sein. <br><br> Ob euer Rechner für das kostenlose Update technisch qualifiziert müsst ihr im Vorfeld prüfen. Denn Microsoft hat deutlich höhere Ansprüche an die Hardware, als bei vorherigen Betriebssystemen. Nachfolgend findet ihr die entsprechenden Systemanforderungen."
+            "Frage": "Ich habe Windows 7 über eine Website erworben. Der Händler hat mir mitgeteilt, dass ich über einen „System-Builder“-Product Key verfüge. Wieso ist dieser nicht zulässig?",
+            "Antwort": "Nicht alle „System-Builder“-Produkte für Windows 7 sind derzeit auf der Website verfügbar. Wir fügen in Zukunft weitere hinzu. Wir empfehlen Ihnen, sich an den Support zu wenden."
         },
         {
             "Frage": "Kann ich ein Upgrade auf Windows 11 rückgängig machen?",
             "Antwort": "Aus Support-Dokumenten von Microsoft und Lenovo geht hervor, dass das Upgrade einen 10-tägigen Testzeitraum erlaubt. Innerhalb dieser 10 Tage könnt ihr jederzeit das Upgrade rückgängig machen. Danach könnt ihr nur noch über eine Neuinstallation zu Windows 10 zurückkehren."
         },
         {
-            "Frage": "Wie viel wird Windows 11 kosten?",
-            "Antwort": "Hierzu hat sich Microsoft noch nicht geäußert. Der Hersteller verfolgte in der Vergangenheit aber eine recht vorhersehbare Preispolitik. Die Home-Version von Windows 7 kostete 150 Euro und die Professional-Version 285 Euro. Windows 10 war in einigen belangen günstiger. Die Home-Version waren für 145 Euro und Professional für 259 Euro erhältlich. Es ist daher nicht unwahrscheinlich, dass die Verkaufsversionen von Windows 11 zu ähnlichen Preisen angeboten werden."
+            "Frage": "Wie stelle ich fest, ob auf meinem Computer eine 64-Bit-Version von Windows ausgeführt werden kann?",
+            "Antwort": "Öffnen Sie den Explorer oder „Dieser PC“, wenn ein Windows-System installiert ist.<br><br>1. Führen Sie unter „Dieser PC“ oder „Computer“ im Navigationsbereich einen Rechtsklick durch und wählen Sie „Eigenschaften“ aus.<br>2. Auf dem Bildschirm mit den Systeminformationen finden Sie den Systemtyp. Dieser gibt an, welche Art von Prozessor das Gerät verwendet.<br><br>Sehen Sie in der Dokumentation zum Gerät nach, wenn kein Betriebssystem installiert ist. Auf den Websites der meisten Geräte- und Prozessorhersteller finden Sie ebenfalls Informationen zum Prozessor."
         }
     ],
     "MacOS":[
