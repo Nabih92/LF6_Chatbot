@@ -276,6 +276,19 @@
     <script src="responses.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="contact.js"></script>
-    <script src="sidebar.js"></script>
+    <script>
+      $(".hamburger").click(function () {
+          $(".wrapper2").toggleClass("collapse");
+          $(".hamburger").toggleClass("open");
+      });
+      $(".sidebar").hover(function () {
+          let hamburger = document.getElementById("hamburger");
+          if(hamburger.className.includes("open")){
+              
+          }else{
+              $(".wrapper2").toggleClass("collapse");
+          }
+      });
+    </script>
   </body>
 </html>
