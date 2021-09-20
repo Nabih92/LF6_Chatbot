@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <title>Geekdude</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="faqstyle.css">
+    <link rel="stylesheet" href="chatbot.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="chatbox">
+        <div class="chatbox__button">
+          <div class="HelpMessage" id="HelpMessageRemove">kann ich Ihnen helfen?</div>
+          <button id="chat-button" type="button" class="collapsible"><img src="./chatboticon.png" style="width: 45px;height: 40px;"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <style>
+      .chatbox {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+      }
+      .chatbox__button {
+        text-align: right;
+      }
+    </style>
+    <div class="chat-bar-collapsible" id="showChat">  
+      <div class="chatbox__header">
+        <div class="chatbox__image--header">
+            <img style="width: 38px;" src="./chatboticon.png" alt="image">
+        </div>
+        <div class="chatbox__content--header">
+            <h4 class="chatbox__heading--header">BumbleBee</h4>
+            <p class="chatbox__description--header">Ich bin hier um Sie zu helfen!</p>
+        </div>
+      </div>
+      <div class="chat-bar-input-block" id="eingabeBlock">
+        <div id="userInput">
+          <input disabled="disabled" id="textInput" class="input-box" type="text" name="msg" placeholder="Bitte nur Buttons wählen...">
+          <p></p>
+        </div>
+        <div class="chat-bar-icons">
+          <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="full-chat-block">
+          <div class="outer-container">
+            <div class="chat-container">
+              <div id="chatbox"></div>
+              <br>
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper collapse" id="Wrapper">
+      <div class="top_navbar">
+        <div class="hamburger" id="hamburger">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <div class="top_menu">
+          <div class="logo"><img src="./logo.svg" style="width: 60px;">
+            <a  class="LogoText" style="margin-top: 13px;">Geekdude
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-bell"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <ul>
+          <hr id="lineIcon" style="height: 1px; background-color: white; border: none; width: 25%;">
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-tag"></i>
+              </span>
+              <span class="title">Pricing</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="active">
+              <span class="icon">
+                <i class="fas fa-question-circle"></i>
+              </span>
+              <span class="title">FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <span class="icon">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span class="title">About us</span>
+            </a>
+          </li>
+          <hr id="lineIcon" style="height: 1px; background-color: white; border: none; width: 50%;">
+          <li id="lineIcon">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-search"></i>
+              </span>
+              <span class="title">Search</span>
+            </a>
+          </li>
+          <li id="lineIcon">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-bell"></i>
+              </span>
+              <span class="title">Messages</span>
+            </a>
+          </li>
+          <li id="lineIcon">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="title">Account</span>
+            </a>
+          </li>
+          <hr id="lineIcon" style="height: 1px; background-color: white; border: none; width: 75%;">
+        </ul>
+      </div>
+
+      <div class="main_container">
+        <h2 style="text-decoration: underline;">Help Center<a style="margin-left: 10px;font-size: 16px;">FAQs</a></h2>
+
+        <div id="data-table"></div>
+        <div class="accordion" id="accordionFAQ">
+          <div id="AllgemeinFAQ">
+            <h1 style="text-align: center;">Allgemein</h1>
+          </div>
+          <br><br>
+          <div id="LinuxOSFaq">
+            <h1 style="text-align: center;">Linux OS</h1>
+          </div>
+          <br><br>
+          <div id="WindowsOSFaq">
+            <h1 style="text-align: center;">Windows OS</h1>
+          </div>
+          <br><br>
+          <div id="MacOSFaq">
+            <h1 style="text-align: center;">Mac OS</h1>
+          </div>
+          <br><br>
+          <div id="NetzwerkeFaq">
+            <h1 style="text-align: center;">Infrastruktur & Netzwerke</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="faqscript.js"></script>
+    <script src="chat.js"></script>
+    <script src="responses.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
 </html>
