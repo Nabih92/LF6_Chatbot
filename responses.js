@@ -251,7 +251,7 @@ function lastAnswer(id, parentId){
   var UserInputText = document.getElementById("textInput");
   
   if(id == "yes"){
-    answer = "Danke für das Feedback";
+    answer = "Wir bedanken uns für Ihr Feedback";
     $("#chatbox").append(finalInput);
     var finalInputText = document.getElementById("lastAnswerText");
     finalInputText.innerHTML= "Wir bedanken uns bei Ihnen. <br> Wir werden uns auf ein Feedback freuen.";
