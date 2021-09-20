@@ -7,7 +7,7 @@ function sendEmailWithData(){
         Password: "4bdfb0c7d6ae16",
         To: "geekdudeforhelp@gmail.com",
         From: "geekdudeforhelp@gmail.com",
-        Subject: "test",
+        Subject: "New Issue from the Customer",
         Body: `<h1>Neues Problem von Kunde</h1><br><br>
         <p><a style="font-weight: 800">Titel:</a> ${Inputs.titel.value}</p><br>
         <p><a style="font-weight: 800">Anrede:</a> ${Inputs.anrede.value}</p><br>
